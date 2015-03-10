@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>IVANDEVPARALLEL</Machine>
+    <WindowsUser>Ivan</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>04004a1c-2f98-4d98-bace-ace8889f2e35</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>8E13FEC210A9D64C68BA149C35CB047B1A165C91747BD8CCBB49F3D186DE338E</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>04004a1c-2f98-4d98-bace-ace8889f2e35_1.0.0.0_neutral__gk938hsxq58a8</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>04004a1c-2f98-4d98-bace-ace8889f2e35_gk938hsxq58a8!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>04004a1c-2f98-4d98-bace-ace8889f2e35</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Ivan</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-10T02:47:12.407</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2015-03-10T02:46:23.056</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.css">
+      <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
+      <Modified>2015-03-10T02:46:23.059</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.css">
+      <PackagePath>pages\groupDetail\groupDetail.css</PackagePath>
+      <Modified>2015-03-10T02:46:23.051</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupedItems\groupedItems.css">
+      <PackagePath>pages\groupedItems\groupedItems.css</PackagePath>
+      <Modified>2015-03-10T02:46:23.063</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T09:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T09:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T09:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T09:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\data.js">
+      <PackagePath>js\data.js</PackagePath>
+      <Modified>2014-03-13T18:15:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2015-03-10T02:46:23.046</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2015-03-10T02:46:23.102</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.js">
+      <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
+      <Modified>2015-03-10T02:46:23.115</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.js">
+      <PackagePath>pages\groupDetail\groupDetail.js</PackagePath>
+      <Modified>2015-03-10T02:46:23.083</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupedItems\groupedItems.js">
+      <PackagePath>pages\groupedItems\groupedItems.js</PackagePath>
+      <Modified>2015-03-10T02:46:23.085</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.html">
+      <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
+      <Modified>2015-03-10T07:03:39.224</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.html">
+      <PackagePath>pages\groupDetail\groupDetail.html</PackagePath>
+      <Modified>2015-03-10T07:03:39.272</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupedItems\groupedItems.html">
+      <PackagePath>pages\groupedItems\groupedItems.html</PackagePath>
+      <Modified>2015-03-10T07:03:39.312</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2015-03-10T02:46:23.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-03-10T02:47:12.219</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

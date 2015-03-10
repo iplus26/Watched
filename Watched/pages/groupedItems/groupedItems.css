@@ -1,0 +1,106 @@
+﻿.groupeditemspage section[role=main] {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+.groupeditemspage .groupeditemslist {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+    /* This selector is used to prevent ui-dark/light.css from overwriting changes
+       to .win-surface. */
+    .groupeditemspage .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-bottom: 60px;
+        margin-left: 45px;
+        margin-right: 115px;
+        margin-top: 128px;
+    }
+
+    .groupeditemspage .groupeditemslist.win-rtl .win-horizontal.win-viewport .win-surface {
+        margin-left: 115px;
+        margin-right: 45px;
+    }
+
+    .groupeditemspage .groupeditemslist .win-groupheader {
+        padding: 0;
+    }
+
+    /* Use grid and top level layout for truncation */
+    .groupeditemspage .groupeditemslist .group-header {
+        -ms-grid-columns: minmax(0, max-content) 7px max-content;
+        -ms-grid-rows: max-content;
+        display: -ms-inline-grid;
+        line-height: 1.5;
+    }
+
+    /* Override default button styles */
+    .groupeditemspage .groupeditemslist .group-header, .group-header:hover, .group-header:hover:active {
+        background: transparent;
+        border: 0;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 1px;
+        min-height: 0;
+        padding: 0;
+    }
+
+        .groupeditemspage .groupeditemslist .group-header .group-title {
+            display: inline-block;
+        }
+
+        .groupeditemspage .groupeditemslist .group-header .group-chevron {
+            -ms-grid-column: 3;
+            display: inline-block;
+        }
+
+            .groupeditemspage .groupeditemslist .group-header .group-chevron::before {
+                content: "\E26B";
+                font-family: 'Segoe UI Symbol';
+            }
+
+            .groupeditemspage .groupeditemslist .group-header .group-chevron:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::before {
+                content: "\E26C";
+            }
+
+    .groupeditemspage .groupeditemslist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+        height: 250px;
+        width: 250px;
+    }
+
+        .groupeditemspage .groupeditemslist .item .item-image {
+            -ms-grid-row-span: 2;
+        }
+
+        .groupeditemspage .groupeditemslist .item .item-overlay {
+            -ms-grid-row: 2;
+            -ms-grid-rows: 1fr 21px;
+            background: rgba(0, 0, 0, 0.65);
+            display: -ms-grid;
+            padding: 6px 15px 2px 15px;
+        }
+
+            .groupeditemspage .groupeditemslist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                color: rgba(255, 255, 255, 0.87);
+                overflow: hidden;
+                width: 220px;
+            }
+
+            .groupeditemspage .groupeditemslist .item .item-overlay .item-subtitle {
+                -ms-grid-row: 2;
+                color: rgba(255, 255, 255, 0.6);
+                width: 220px;
+            }
+
+@media screen and (-ms-high-contrast) {
+    .groupeditemspage .groupeditemslist .item .item-overlay {
+        color: WindowText;
+    }
+}
