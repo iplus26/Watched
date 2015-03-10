@@ -1,4 +1,6 @@
-﻿.groupdetailpage section[role=main] {
+﻿body {font-family: DengXian;}
+
+.groupdetailpage section[role=main] {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
 }
@@ -69,7 +71,7 @@
         -ms-grid-columns: 110px 1fr;
         -ms-grid-rows: 1fr;
         display: -ms-grid;
-        height: 110px;
+        height: 157px;
         padding: 7px;
         width: 480px;
     }

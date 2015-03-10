@@ -21,13 +21,18 @@
         <img class="group-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
         <h4 class="group-description" data-win-bind="innerHTML: description"></h4>
     </div>
+
+    <!-- 下面显示每个item -->
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
         <div class="item">
             <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
             <div class="item-info">
                 <h4 class="item-title" data-win-bind="textContent: title"></h4>
                 <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>
-                <h4 class="item-description" data-win-bind="textContent: description"></h4>
+                <div class="win-small" data-win-control="WinJS.UI.Rating" data-win-bind="winControl.averageRating: ratingOutOf5" data-win-options=" {maxRating: 5}"></div>
+                <h6 class="item-description" data-win-bind="textContent: castString"></h6>
+
+                <h2 class="item-subtitle" data-win-bind="textContent: doubanSort"></h2>
             </div>
         </div>
     </div>

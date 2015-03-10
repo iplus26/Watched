@@ -19,13 +19,16 @@
         getItemReference: getItemReference,
         getItemsFromGroup: getItemsFromGroup,
         resolveGroupReference: resolveGroupReference,
-        resolveItemReference: resolveItemReference
+        resolveItemReference: resolveItemReference,
+        getMovie: getDoubanMovie,
+        getMovies: getMovies,
+        getMoreInfo: getDoubanMovieWithMoreInfo
     });
 
     // Get a reference for an item, using the group key and item title as a
     // unique reference to the item that can be easily serialized.
     function getItemReference(item) {
-        return [item.group.key, item.title];
+        return [item.group.key, item.id];
     }
 
     // This function returns a WinJS.Binding.List containing only the items
@@ -40,11 +43,11 @@
     }
 
     // Get a unique item from the provided string array, which should contain a
-    // group key and an item title.
+    // group key and an item id.
     function resolveItemReference(reference) {
         for (var i = 0; i < groupedItems.length; i++) {
             var item = groupedItems.getAt(i);
-            if (item.group.key === reference[0] && item.title === reference[1]) {
+            if (item.group.key === reference[0] && item.id === reference[1]) {
                 return item;
             }
         }
@@ -69,8 +72,8 @@
     // Returns an array of sample data that can be added to the application's
     // data list. 
     function generateSampleData() {
-        var itemContent = "some bullshit before. ";
-        var itemDescription = "Item Description: Pellentesque porta mauris quis interdum vehicula urna sapien ultrices velit nec venenatis dui odio in augue cras posuere enim a cursus convallis neque turpis malesuada erat ut adipiscing neque tortor ac erat";
+       // var itemContent = "some bullshit before. ";
+       // var itemDescription = "Item Description: Pellentesque porta mauris quis interdum vehicula urna sapien ultrices velit nec venenatis dui odio in augue cras posuere enim a cursus convallis neque turpis malesuada erat ut adipiscing neque tortor ac erat";
         var groupDescription = "Group Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante";
 
         // These three strings encode placeholder images. You will want to set the
@@ -82,37 +85,82 @@
         var groupImage = "http://t.douban.com/img/biz/poster-1357728694.jpg";
 
         var movieGroups = [
-            { key: "movieGroup3", title: "本周口碑榜", subtitle: "口碑榜是豆瓣根据用户最近一周收藏的不低于7分的新片、依据算法按“评分+热度”排序的结果。", backgroundImage: groupImage, description: groupDescription },
-            { key: "movieGroup1", title: "豆瓣电影TOP250", subtitle: "Group Subtitle: top250", backgroundImage: groupImage, description: groupDescription },
-            { key: "movieGroup2", title: "哈利波特合集", subtitle: "Group Subtitle: hp", backgroundImage: groupImage, description: groupDescription }
+            {
+                key: "movieGroup3",
+                // todo: 权限问题解决、可以获取豆瓣口碑榜单的时候，将key值改为movieGroup0，在最前显示。
+                // 因为仍然是 movieGroups[0] 所以其他代码不用做修改。
+                title: "本周口碑榜",
+                subtitle: "数据来自豆瓣电影",
+                backgroundImage: groupImage,
+                description: "口碑榜是豆瓣根据用户最近一周收藏的不低于7分的新片、依据算法按“评分+热度”排序的结果。"
+            },
+            {
+                key: "movieGroup1",
+                title: "豆瓣电影TOP250",
+                subtitle: "数据来自豆瓣电影",
+                backgroundImage: groupImage,
+                description: "豆瓣用户每天都在对“看过”的电影进行“很差”到“力荐”的评价，豆瓣根据每部影片看过的人数以及该影片所得的评价等综合数据，通过算法分析产生豆瓣电影250。"
+            },
+            {
+                key: "movieGroup2",
+                title: "Harry Potter Collection",
+                subtitle: "合集由「看过」团队制作",
+                backgroundImage: groupImage,
+                description: "此合集收纳了「哈利波特」系列的八部电影。"
+                // todo: 根据豆列内容显示合集
+            }
         ]
 
         var movieItems = [
 
-            { group: movieGroups[0], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: movieGroups[0], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: movieGroups[0], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: movieGroups[0], title: "Item Title: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: movieGroups[0], title: "Item Title: 5", subtitle: "Item Subtitle: 5", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
+            { group: movieGroups[0], title: "Item Title: 1", subtitle: "Item Subtitle: 1", backgroundImage: lightGray },
+            { group: movieGroups[0], title: "Item Title: 2", subtitle: "Item Subtitle: 2", backgroundImage: lightGray },
+            { group: movieGroups[0], title: "Item Title: 3", subtitle: "Item Subtitle: 3", backgroundImage: lightGray },
+            { group: movieGroups[0], title: "Item Title: 4", subtitle: "Item Subtitle: 4", backgroundImage: lightGray },
+            { group: movieGroups[0], title: "Item Title: 5", subtitle: "Item Subtitle: 5", backgroundImage: lightGray },
 
-            { group: movieGroups[2], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: movieGroups[2], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: movieGroups[2], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: lightGray },
+            { group: movieGroups[2], title: "Item Title: 1", subtitle: "Item Subtitle: 1", backgroundImage: lightGray },
+            { group: movieGroups[2], title: "Item Title: 2", subtitle: "Item Subtitle: 2", backgroundImage: lightGray },
+            { group: movieGroups[2], title: "Item Title: 3", subtitle: "Item Subtitle: 3", backgroundImage: lightGray }
 
         ];
 
         var movieGroupTop250 = getMovies("/v2/movie/top250");   //array of douban movie objects
+
         for (var i = 0; i < 6; i++) {
-            movieGroupTop250[i].group = movieGroups[1];
-            movieGroupTop250[i].subtitle = movieGroupTop250[i].original_title + " (" + movieGroupTop250[i].year + ")";
-            movieGroupTop250[i].description = "我们不剧透! ";
-            movieGroupTop250[i].content = itemContent;
-            movieGroupTop250[i].backgroundImage = movieGroupTop250[i].images.large;
+            movieGroupTop250[i] = getDoubanMovieWithMoreInfo(movieGroupTop250[i], movieGroups[1]);
             movieItems.push(movieGroupTop250[i]);
         }
 
         return movieItems;
     }
 
-    
+    function getDoubanMovie(movieId) {
+        var xhr = new XMLHttpRequest();
+        var requestUrl = "http://api.douban.com/v2/movie/subject/" + movieId;
+        xhr.open("get", requestUrl, false);
+        xhr.send(null);
+
+        var jsonText = xhr.responseText;
+        var movie = JSON.parse(jsonText);   // a douban movie object
+
+        return movie;
+    }
+
+    function getDoubanMovieWithMoreInfo(dbMovieItem, group) {
+        dbMovieItem.group = group;
+        dbMovieItem.subtitle = dbMovieItem.original_title + " (" + dbMovieItem.year + ")";
+        dbMovieItem.backgroundImage = //"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY3B0cPoPAANMAcOba1BlAAAAAElFTkSuQmCC";
+        dbMovieItem.images.large; // todo: 如何分情况显示大图片和小图片？
+        dbMovieItem.ratingOutOf5 = dbMovieItem.rating.average / 2;
+
+        for (var c = 0; c < dbMovieItem.casts.length; c++) {
+            if (c == 0) {
+                dbMovieItem.castString = dbMovieItem.casts[0].name;
+            }else
+                dbMovieItem.castString += " / " + dbMovieItem.casts[c].name;
+        }
+
+        return dbMovieItem;
+    }
 })();

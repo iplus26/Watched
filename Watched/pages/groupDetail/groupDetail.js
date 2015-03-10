@@ -10,7 +10,29 @@
         // This function is called to initialize the page.
         init: function (element, options) {
             var group = Data.resolveGroupReference(options.groupKey);
-            this._items = Data.getItemsFromGroup(group);
+
+        
+            // todo: 如何真正地在此页修改data，使得再次打开时不需要重新加载？
+
+
+                var movies = Data.getItemsFromGroup(group); // a WinJS.Binding.List object
+
+                for (var i = 0; i < movies.length; i++) {
+                    // todo:  add sort
+                }
+
+                var moreMovies = Data.getMovies("/v2/movie/top250?start=" + movies.length + "&count=" + (50 - movies.length));
+
+                for (var i = 0; i < moreMovies.length; i++) {
+                    moreMovies[i] = Data.getMoreInfo(moreMovies[i], group);
+                    moreMovies[i].doubanSort = "#" + (movies.length + 1).toString();
+                    movies.push(moreMovies[i]);
+
+                }
+
+                this._items = movies;
+
+            
             this._pageTitle = group.title;
             var pageList = this._items.createGrouped(
                 function groupKeySelector(item) { return group.key; },
@@ -19,6 +41,8 @@
             this.groupDataSource = pageList.groups.dataSource;
             this.itemDataSource = pageList.dataSource;
             this.itemInvoked = ui.eventHandler(this._itemInvoked.bind(this));
+
+
         },
 
         // This function is called whenever a user navigates to this page. 
@@ -34,6 +58,7 @@
             /// <param name="element" domElement="true" />
 
             // TODO: Respond to changes in layout.
+            
         },
 
         _itemInvoked: function (args) {
@@ -41,4 +66,5 @@
             WinJS.Navigation.navigate("/pages/itemDetail/itemDetail.html", { item: Data.getItemReference(item) });
         }
     });
+
 })();

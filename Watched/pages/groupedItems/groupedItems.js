@@ -21,11 +21,13 @@
             // TODO: Respond to changes in layout.
         },
 
+        // 点击 group 项
         _groupHeaderInvoked: function (args) {
             var group = Data.groups.getAt(args.detail.groupHeaderIndex);
             nav.navigate("/pages/groupDetail/groupDetail.html", { groupKey: group.key });
         },
 
+        // 点击 item 项
         _itemInvoked: function (args) {
             var item = Data.items.getAt(args.detail.itemIndex);
             nav.navigate("/pages/itemDetail/itemDetail.html", { item: Data.getItemReference(item) });
