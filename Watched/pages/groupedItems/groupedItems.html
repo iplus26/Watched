@@ -47,9 +47,9 @@
                     layout: {type: WinJS.UI.GridLayout, groupHeaderPosition: 'top'},
                     selectionMode: 'none',
                     currentItem: {type: WinJS.UI.ObjectType.item, index: 0, hasFocus: true},
-                    groupDataSource: Data.groups.dataSource,
+                    groupDataSource: Data.groupsLess.dataSource,
                     groupHeaderTemplate: select('.headertemplate'),
-                    itemDataSource: Data.items.dataSource,
+                    itemDataSource: Data.itemsLess.dataSource,
                     itemTemplate: select('.itemtemplate'),
                     ongroupheaderinvoked: select('.pagecontrol').winControl.groupHeaderInvoked,
                     oniteminvoked: select('.pagecontrol').winControl.itemInvoked
