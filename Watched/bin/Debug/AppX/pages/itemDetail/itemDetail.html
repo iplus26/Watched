@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>itemDetailPage</title>
+    <title>hubPage</title>
 
     <!-- WinJS references -->
     <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
@@ -15,19 +15,49 @@
     <script src="/pages/itemDetail/itemDetail.js"></script>
 </head>
 <body>
+    <div class="section1template" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <div class="item-overlay">
+                <h4 class="item-title" data-win-bind="textContent: title"></h4>
+                <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>
+            </div>
+        </div>
+    </div>
 
-    <!-- The content that will be loaded and displayed. -->
-    <div class="itemdetailpage fragment">
+    <div class="hubpage fragment">
         <header aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle"></span>
+                <span class="pagetitle">App1</span>
             </h1>
         </header>
+
         <section aria-label="Main content" role="main">
+            <!-- Customize the Hub control by modifying the HubSection controls here. -->
 
-            <!-- TODO: Content goes here. -->
+            <div class="hub" data-win-control="WinJS.UI.Hub">
+                <div class="hero" data-win-control="WinJS.UI.HubSection">
+                </div>
 
+                
+
+                <div class="section2" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'Section2'} }">
+                    <div class="item-title win-type-medium" data-win-res="{ textContent: 'Section2ItemTitle' }"></div>
+                    <div class="article-header win-type-x-large" data-win-res="{ textContent: 'Section2Subtext' }"></div>
+                    <div class="win-type-xx-small" data-win-res="{ textContent: 'Section2ItemSubTitle' }"></div>
+                    <div class="win-type-small">
+                        <span data-win-res="{ textContent: 'Section2Description' }"></span>
+                        <span data-win-res="{ textContent: 'Section2Description' }"></span>
+                        <span data-win-res="{ textContent: 'Section2Description' }"></span>
+                        <span data-win-res="{ textContent: 'Section2Description' }"></span>
+                        <span data-win-res="{ textContent: 'Section2Description' }"></span>
+                        <span data-win-res="{ textContent: 'Section2Description' }"></span>
+                    </div>
+                </div>
+
+
+            </div>
         </section>
     </div>
 </body>

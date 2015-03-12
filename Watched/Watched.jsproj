@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="css\default.css" />
+    <Content Include="images\BadgeLogo.scale-180.png" />
     <Content Include="images\splashscreen.scale-100.png" />
     <Content Include="images\Square150x150Logo.scale-100.png" />
     <Content Include="images\Square150x150Logo.scale-140.png" />
@@ -69,6 +70,7 @@
     <Content Include="images\Square70x70Logo.scale-140.png" />
     <Content Include="images\Square70x70Logo.scale-180.png" />
     <Content Include="images\Square70x70Logo.scale-80.png" />
+    <Content Include="images\storelogo.scale-180.png" />
     <Content Include="images\Wide310x150Logo.scale-100.png" />
     <Content Include="images\Wide310x150Logo.scale-140.png" />
     <Content Include="images\Wide310x150Logo.scale-180.png" />
@@ -78,6 +80,9 @@
     <Content Include="pages\itemDetail\itemDetail.css" />
     <Content Include="pages\itemDetail\itemDetail.html" />
     <Content Include="pages\itemDetail\itemDetail.js" />
+    <Content Include="pages\itemDetail\itemDetail_old.css" />
+    <Content Include="pages\itemDetail\itemDetail_old.html" />
+    <Content Include="pages\itemDetail\itemDetail_old.js" />
     <Content Include="pages\groupDetail\groupDetail.css" />
     <Content Include="pages\groupDetail\groupDetail.html" />
     <Content Include="pages\groupDetail\groupDetail.js" />
@@ -85,6 +90,9 @@
     <Content Include="pages\groupedItems\groupedItems.html" />
     <Content Include="pages\groupedItems\groupedItems.js" />
     <Content Include="default.html" />
+    <Content Include="pages\searchResult\searchResults.css" />
+    <Content Include="pages\searchResult\searchResults.html" />
+    <Content Include="pages\searchResult\searchResults.js" />
     <None Include="Watched_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,6 @@
 css\default.css
 default.html
+images\BadgeLogo.scale-180.png
 images\splashscreen.scale-100.png
 images\Square150x150Logo.scale-100.png
 images\Square150x150Logo.scale-140.png
@@ -13,6 +14,7 @@ images\Square70x70Logo.scale-100.png
 images\Square70x70Logo.scale-140.png
 images\Square70x70Logo.scale-180.png
 images\Square70x70Logo.scale-80.png
+images\storelogo.scale-180.png
 images\Wide310x150Logo.scale-100.png
 images\Wide310x150Logo.scale-140.png
 images\Wide310x150Logo.scale-180.png
@@ -28,3 +30,9 @@ pages\groupedItems\groupedItems.js
 pages\itemDetail\itemDetail.css
 pages\itemDetail\itemDetail.html
 pages\itemDetail\itemDetail.js
+pages\itemDetail\itemDetail_old.css
+pages\itemDetail\itemDetail_old.html
+pages\itemDetail\itemDetail_old.js
+pages\searchResult\searchResults.css
+pages\searchResult\searchResults.html
+pages\searchResult\searchResults.js
