@@ -1,4 +1,3 @@
-C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\resources.pri
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\AppxManifest.xml
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\Watched.build.appxrecipe
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\priconfig.xml
@@ -13,3 +12,4 @@ C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\qualifiers.t
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\qualifiers.txt.intermediate
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\ProjectArchitectures.txt
+C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\resources.pri

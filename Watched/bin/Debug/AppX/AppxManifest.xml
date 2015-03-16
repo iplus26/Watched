@@ -22,7 +22,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="Watched" Description="Watched" ForegroundText="dark" BackgroundColor="#ffffff" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\SmallLogo.png">
+      <m2:VisualElements DisplayName="Watched" Description="Watched" ForegroundText="dark" BackgroundColor="#ffffff" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\SmallLogo.png" ToastCapable="true">
         <m2:DefaultTile ShortName="Watched" Square310x310Logo="images\Square310x310Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" Square70x70Logo="images\Square70x70Logo.png">
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />
@@ -31,6 +31,11 @@
           </m2:ShowNameOnTiles>
         </m2:DefaultTile>
         <m2:SplashScreen Image="images\splashscreen.png" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+          <m2:Rotation Preference="landscapeFlipped" />
+        </m2:InitialRotationPreference>
+        <m2:ApplicationView MinWidth="default" />
       </m2:VisualElements>
     </Application>
   </Applications>

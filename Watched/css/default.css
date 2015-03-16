@@ -1,4 +1,7 @@
-﻿#contenthost {
+﻿body {font-family: DengXian;}
+
+
+#contenthost {
     height: 100%;
     width: 100%;
 }

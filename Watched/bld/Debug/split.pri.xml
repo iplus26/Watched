@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="04004a1c-2f98-4d98-bace-ace8889f2e35" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>80, 100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="default.html" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/default.html">
+				<Candidate type="Path">
+					<Value>default.html</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="css">
+				<NamedResource name="default.css" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/css/default.css">
+					<Candidate type="Path">
+						<Value>css\default.css</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="BadgeLogo.png" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/images/BadgeLogo.png"/>
+				<NamedResource name="splashscreen.png" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/images/splashscreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\splashscreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/images/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>images\Square310x310Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square310x310Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/images/Square70x70Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>images\Square70x70Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square70x70Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="storelogo.png" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/images/storelogo.png"/>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="js">
+				<NamedResource name="data.js" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/js/data.js">
+					<Candidate type="Path">
+						<Value>js\data.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="default.js" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/js/default.js">
+					<Candidate type="Path">
+						<Value>js\default.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="navigator.js" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/js/navigator.js">
+					<Candidate type="Path">
+						<Value>js\navigator.js</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="pages">
+				<ResourceMapSubtree name="groupDetail">
+					<NamedResource name="groupDetail.css" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/groupDetail/groupDetail.css">
+						<Candidate type="Path">
+							<Value>pages\groupDetail\groupDetail.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="groupDetail.html" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/groupDetail/groupDetail.html">
+						<Candidate type="Path">
+							<Value>pages\groupDetail\groupDetail.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="groupDetail.js" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/groupDetail/groupDetail.js">
+						<Candidate type="Path">
+							<Value>pages\groupDetail\groupDetail.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="groupedItems">
+					<NamedResource name="groupedItems.css" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/groupedItems/groupedItems.css">
+						<Candidate type="Path">
+							<Value>pages\groupedItems\groupedItems.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="groupedItems.html" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/groupedItems/groupedItems.html">
+						<Candidate type="Path">
+							<Value>pages\groupedItems\groupedItems.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="groupedItems.js" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/groupedItems/groupedItems.js">
+						<Candidate type="Path">
+							<Value>pages\groupedItems\groupedItems.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="itemDetail">
+					<NamedResource name="itemDetail.css" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/itemDetail/itemDetail.css">
+						<Candidate type="Path">
+							<Value>pages\itemDetail\itemDetail.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="itemDetail.html" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/itemDetail/itemDetail.html">
+						<Candidate type="Path">
+							<Value>pages\itemDetail\itemDetail.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="itemDetail.js" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/itemDetail/itemDetail.js">
+						<Candidate type="Path">
+							<Value>pages\itemDetail\itemDetail.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="itemDetail_old.css" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/itemDetail/itemDetail_old.css">
+						<Candidate type="Path">
+							<Value>pages\itemDetail\itemDetail_old.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="itemDetail_old.html" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/itemDetail/itemDetail_old.html">
+						<Candidate type="Path">
+							<Value>pages\itemDetail\itemDetail_old.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="itemDetail_old.js" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/itemDetail/itemDetail_old.js">
+						<Candidate type="Path">
+							<Value>pages\itemDetail\itemDetail_old.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="searchResult">
+					<NamedResource name="searchResults.css" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/searchResult/searchResults.css">
+						<Candidate type="Path">
+							<Value>pages\searchResult\searchResults.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="searchResults.html" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/searchResult/searchResults.html">
+						<Candidate type="Path">
+							<Value>pages\searchResult\searchResults.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="searchResults.js" uri="ms-resource://04004a1c-2f98-4d98-bace-ace8889f2e35/Files/pages/searchResult/searchResults.js">
+						<Candidate type="Path">
+							<Value>pages\searchResult\searchResults.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

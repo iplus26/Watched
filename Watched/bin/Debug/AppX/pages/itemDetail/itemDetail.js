@@ -20,28 +20,25 @@
             // options.item = [item.group.key, item.id]
 
             var movieItem = Data.resolveItemReference(options.item);
+            // 无论这个item是从groupDetail, or groupedItem, or searchResult链接过来的
+            // 都具有一些豆瓣电影object的基本信息
+            // 根据这个item.id去查询item detail获得一个更完整的对象
 
-            var group = Data.resolveGroupReference(options.item[0]);
+            movieItem = Data.getMovie(movieItem.id);
+
+            // 说真的我不知道下面两句话是干什么用的 所以留着等删吧
+            // this._items = Data.getItemsFromGroup(group);
+            // this._pageTitle = movieItem.title;
+
             
-            //  this._items = Data.getItemsFromGroup(group);
-            this._pageTitle = movieItem.title;
+            var personDiv = document.querySelector('#movieSpan');
+            WinJS.Binding.processAll(personDiv, movieItem);
 
-            var dataArray = [movieItem];
-            var itemList = new WinJS.Binding.List(dataArray);
-
-            WinJS.Namespace.define("ItemData", { itemList: itemList });
-            /*
-            var pageList = this._items.createGrouped(
-                function groupKeySelector(item) { return group.key; },
-                function groupDataSelector(item) { return group; }
-            );
-            this.groupDataSource = pageList.groups.dataSource;
-            this.itemDataSource = pageList.dataSource;
-            this.itemInvoked = ui.eventHandler(this._itemInvoked.bind(this));
-            */
-
-            alert("电影详情页面还没有做好哦");
+            alert(personDiv);
+            
         },
+       
+        
 
         processed: function (element) {
             return WinJS.Resources.processAll(element);
@@ -64,19 +61,6 @@
         },
         
         itemDataSource: item.dataSource,
-
-        /*
-        section3HeaderNavigate: util.markSupportedForProcessing(function (args) {
-            nav.navigate("/pages/section/section.html", { title: args.detail.section.header, groupKey: section3Group.key });
-        }),
-        */
-
-        /*
-        section3ItemNavigate: util.markSupportedForProcessing(function (args) {
-            var item = Data.getItemReference(section3Items.getAt(args.detail.itemIndex));
-            nav.navigate("/pages/item/item.html", { item: item });
-        }),
-        */
 
         unload: function () {
             // TODO: Respond to navigations away from this page.

@@ -1,4 +1,6 @@
-﻿.hubpage header[role=banner] {
+﻿body {font-family: DengXian;}
+
+.hubpage header[role=banner] {
     position: relative;
     z-index: 2;
 }

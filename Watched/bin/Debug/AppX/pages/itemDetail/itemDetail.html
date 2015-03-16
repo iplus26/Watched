@@ -15,16 +15,6 @@
     <script src="/pages/itemDetail/itemDetail.js"></script>
 </head>
 <body>
-    <div class="section1template" data-win-control="WinJS.Binding.Template">
-        <div class="item">
-            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
-            <div class="item-overlay">
-                <h4 class="item-title" data-win-bind="textContent: title"></h4>
-                <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>
-            </div>
-        </div>
-    </div>
-
     <div class="hubpage fragment">
         <header aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
@@ -40,7 +30,26 @@
                 <div class="hero" data-win-control="WinJS.UI.HubSection">
                 </div>
 
+
+                <div class="section1" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': '电影简介'}}">
+                    <div id="basicBinding">
+                        This is detail of movie - 
+                        <button id="btnGetName" >alert!</button>
+                        <span id="movieSpan" data-win-bind="innerText: subtitle"></span>
+                    </div>
+                </div>
                 
+
+                <div class="section1" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'Section1'} }">
+                    <img src="/images/gray.png" width="420" height="280" />
+                    <div class="subtext win-type-x-large" data-win-res="{ textContent: 'Section1Subtext' }"></div>
+                    <div class="win-type-medium" data-win-res="{ textContent: 'DescriptionText' }"></div>
+                    <div class="win-type-small">
+                        <span data-win-res="{ textContent: 'Section1Description' }"></span>
+                        <span data-win-res="{ textContent: 'Section1Description' }"></span>
+                        <span data-win-res="{ textContent: 'Section1Description' }"></span>
+                    </div>
+                </div>
 
                 <div class="section2" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'Section2'} }">
                     <div class="item-title win-type-medium" data-win-res="{ textContent: 'Section2ItemTitle' }"></div>
@@ -53,6 +62,39 @@
                         <span data-win-res="{ textContent: 'Section2Description' }"></span>
                         <span data-win-res="{ textContent: 'Section2Description' }"></span>
                         <span data-win-res="{ textContent: 'Section2Description' }"></span>
+                    </div>
+                </div>
+
+                <div class="section3" data-win-control="WinJS.UI.HubSection" data-win-res="{ winControl: {'header': 'Section3'} }"
+                     data-win-options="{ onheaderinvoked: select('.pagecontrol').winControl.section3HeaderNavigate }">
+                    <div class="itemTemplate" data-win-control="WinJS.Binding.Template">
+                        <img src="#" data-win-bind="src: backgroundImage; alt: title" />
+                        <div class="win-type-medium" data-win-bind="textContent: title"></div>
+                        <div class="win-type-small" data-win-bind="textContent: description"></div>
+                    </div>
+                    <div class="itemslist win-selectionstylefilled" data-win-control="WinJS.UI.ListView" data-win-options="{
+                        layout: {type: WinJS.UI.GridLayout},
+                        selectionMode: 'none',
+                        itemTemplate: select('.section3 .itemTemplate'),
+                        itemDataSource: select('.pagecontrol').winControl.section3DataSource,
+                        oniteminvoked: select('.pagecontrol').winControl.section3ItemNavigate
+                    }">
+                    </div>
+                </div>
+
+                <div class="section4" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'Section4'} }">
+                    <div class="top-image-row">
+                        <img src="/images/gray.png" />
+                    </div>
+                    <div class="sub-image-row">
+                        <img src="/images/gray.png" />
+                        <img src="/images/gray.png" />
+                        <img src="/images/gray.png" />
+                    </div>
+                    <div class="win-type-medium" data-win-res="{ textContent: 'DescriptionText' }"></div>
+                    <div class="win-type-small">
+                        <span data-win-res="{ textContent: 'Section4Description' }"></span>
+                        <span data-win-res="{ textContent: 'Section4Description' }"></span>
                     </div>
                 </div>
 

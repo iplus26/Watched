@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>groupedItemsPage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/groupedItems/groupedItems.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/pages/groupedItems/groupedItems.js"></script>
+</head>
+<body>
+    <!-- These templates are used to display each item in the ListView declared below. -->
+    <div class="headertemplate" data-win-control="WinJS.Binding.Template">
+        <button class="group-header win-type-x-large win-type-interactive" role="link" tabindex="-1" type="button">
+            <span class="group-title win-type-ellipsis" data-win-bind="textContent: title"></span>
+            <span class="group-chevron"></span>
+        </button>
+    </div>
+
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <div class="item-overlay">
+                <h4 class="item-title" data-win-bind="textContent: title"></h4>
+                <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment groupeditemspage">
+        <header aria-label="Header content" role="banner">
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">看过 Watched</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="groupeditemslist win-selectionstylefilled" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{
+                    layout: {type: WinJS.UI.GridLayout, groupHeaderPosition: 'top'},
+                    selectionMode: 'none',
+                    currentItem: {type: WinJS.UI.ObjectType.item, index: 0, hasFocus: true},
+                    groupDataSource: Data.groupsLess.dataSource,
+                    groupHeaderTemplate: select('.headertemplate'),
+                    itemDataSource: Data.itemsLess.dataSource,
+                    itemTemplate: select('.itemtemplate'),
+                    ongroupheaderinvoked: select('.pagecontrol').winControl.groupHeaderInvoked,
+                    oniteminvoked: select('.pagecontrol').winControl.itemInvoked
+                }">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

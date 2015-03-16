@@ -1,0 +1,6 @@
+bld\Debug\split.pri
+bld\Debug\split.map.txt
+bld\Debug\split.scale-140.pri
+bld\Debug\split.scale-140.map.txt
+bld\Debug\split.scale-180.pri
+bld\Debug\split.scale-180.map.txt

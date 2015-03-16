@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>04004a1c-2f98-4d98-bace-ace8889f2e35</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>589782154725FA89EB24480B314013A539590BC8B1EAEE2EA373FC743065AA04</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>1D51D863CED3D67F30CEF2D678D279436A1FD870FB098AB40EB5EE6FE7E6BC3A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>04004a1c-2f98-4d98-bace-ace8889f2e35_1.0.0.0_neutral__gk938hsxq58a8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>04004a1c-2f98-4d98-bace-ace8889f2e35_gk938hsxq58a8!App</RegisteredUserModeAppID>
     <RegisteredPackageID>04004a1c-2f98-4d98-bace-ace8889f2e35</RegisteredPackageID>
@@ -20,17 +20,17 @@
     <AppXManifest Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-03-11T17:23:26.522</Modified>
+      <Modified>2015-03-12T05:36:23.615</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-12T07:50:18.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.css">
       <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
-      <Modified>2015-03-11T17:18:14.415</Modified>
+      <Modified>2015-03-12T07:50:18.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail_old.css">
       <PackagePath>pages\itemDetail\itemDetail_old.css</PackagePath>
@@ -46,11 +46,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.css">
       <PackagePath>pages\searchResult\searchResults.css</PackagePath>
-      <Modified>2015-03-11T11:45:21.239</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\BadgeLogo.scale-180.png">
       <PackagePath>images\BadgeLogo.scale-180.png</PackagePath>
-      <Modified>2015-03-11T17:21:27.000</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\splashscreen.scale-100.png">
       <PackagePath>images\splashscreen.scale-100.png</PackagePath>
@@ -120,7 +120,7 @@
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\storelogo.scale-180.png">
       <PackagePath>images\storelogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-03-11T17:22:58.000</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\Wide310x150Logo.scale-100.png">
       <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
@@ -139,7 +139,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2015-03-11T17:45:19.025</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\default.js">
       <PackagePath>js\default.js</PackagePath>
@@ -151,7 +151,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.js">
       <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
-      <Modified>2015-03-11T18:45:36.339</Modified>
+      <Modified>2015-03-16T13:15:37.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail_old.js">
       <PackagePath>pages\itemDetail\itemDetail_old.js</PackagePath>
@@ -167,11 +167,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.js">
       <PackagePath>pages\searchResult\searchResults.js</PackagePath>
-      <Modified>2015-03-11T12:21:03.684</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.html">
       <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
-      <Modified>2015-03-11T18:45:05.370</Modified>
+      <Modified>2015-03-12T08:57:28.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail_old.html">
       <PackagePath>pages\itemDetail\itemDetail_old.html</PackagePath>
@@ -191,11 +191,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.html">
       <PackagePath>pages\searchResult\searchResults.html</PackagePath>
-      <Modified>2015-03-11T12:21:03.649</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-03-11T17:23:26.444</Modified>
+      <Modified>2015-03-12T07:27:18.050</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
