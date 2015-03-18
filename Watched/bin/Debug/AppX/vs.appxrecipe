@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>04004a1c-2f98-4d98-bace-ace8889f2e35</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>1D51D863CED3D67F30CEF2D678D279436A1FD870FB098AB40EB5EE6FE7E6BC3A</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>A8E827F7ADD03507F20D97465A1B761FBB7E900E3796CDB8B331C3E02B476DEF</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>04004a1c-2f98-4d98-bace-ace8889f2e35_1.0.0.0_neutral__gk938hsxq58a8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>04004a1c-2f98-4d98-bace-ace8889f2e35_gk938hsxq58a8!App</RegisteredUserModeAppID>
     <RegisteredPackageID>04004a1c-2f98-4d98-bace-ace8889f2e35</RegisteredPackageID>
@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-03-16T13:21:57.236</Modified>
+      <Modified>2015-03-18T16:52:24.233</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -139,7 +139,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-18T16:07:45.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\default.js">
       <PackagePath>js\default.js</PackagePath>
@@ -151,7 +151,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.js">
       <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
-      <Modified>2015-03-18T15:55:03.350</Modified>
+      <Modified>2015-03-18T16:49:09.271</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail_old.js">
       <PackagePath>pages\itemDetail\itemDetail_old.js</PackagePath>
@@ -171,7 +171,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.html">
       <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
-      <Modified>2015-03-18T15:54:25.803</Modified>
+      <Modified>2015-03-18T16:52:21.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail_old.html">
       <PackagePath>pages\itemDetail\itemDetail_old.html</PackagePath>
@@ -179,7 +179,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.html">
       <PackagePath>pages\groupDetail\groupDetail.html</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-18T16:49:09.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupedItems\groupedItems.html">
       <PackagePath>pages\groupedItems\groupedItems.html</PackagePath>
@@ -195,7 +195,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-03-12T07:27:18.050</Modified>
+      <Modified>2015-03-18T16:52:23.952</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

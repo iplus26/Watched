@@ -57,13 +57,8 @@
             // 无论这个item是从groupDetail, or groupedItem, or searchResult链接过来的
             // 都具有一些豆瓣电影object的基本信息
             // 根据这个item.id去查询item detail获得一个更完整的对象
+             movieItem = Data.getMovie(movieItem.id);
 
-            movieItem = Data.getMovie(movieItem.id);
-
-            //alert(movieItem.title + "的页面还没有开发好 :）");
-            
-           
-            
         },
        
         
@@ -95,17 +90,19 @@
            // movie.bind("color", onColorChange);
 
             function accessInfo() {
-                movie.title = movieItem.title;
-                movie.summary = movie.summary;
-
-                document.getElementById("movieTitle").innerText = movie.title;
-
+                
+                document.getElementById("movieTitle").innerText = movieItem.title + " (" + movieItem.year + ")";
+                document.getElementById("moviePoster").src = movieItem.images.large;
                 document.getElementById("description").innerText = movieItem.summary;
+                
+                //var rate = document.getElementById("movierate").winControl;
+                //rate.averageRating = 1;
+               
             }
 
 
 
-            alert(movie.title + "的页面还没有开发好 :）");
+            //alert(movieItem.image);
 
             movie.start();
         },

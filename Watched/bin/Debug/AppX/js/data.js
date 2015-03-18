@@ -90,7 +90,6 @@
         return movies;
     }
 
-
     // Returns an array of sample data that can be added to the application's
     // data list. 
     function getMovieData(num) {
@@ -150,7 +149,6 @@
 
         return movieItems;
     }
-
 
     function getDoubanMovie(movieId) {
         var xhr = new XMLHttpRequest();
