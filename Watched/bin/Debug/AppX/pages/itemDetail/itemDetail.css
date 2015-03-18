@@ -1,4 +1,6 @@
-﻿body {font-family: DengXian;}
+﻿body {
+    font-family: DengXian;
+}
 
 .hubpage header[role=banner] {
     position: relative;
@@ -35,7 +37,7 @@
     }
 
 .hubpage .hub .section1 {
-    width: 420px;
+    width: 388px;
 }
 
     .hubpage .hub .section1 .win-hub-section-content {
@@ -48,7 +50,8 @@
     }
 
 .hubpage .hub .section2 {
-    width: 440px;
+    width: 400px;
+
 }
 
     .hubpage .hub .section2 .win-hub-section-content {
@@ -65,6 +68,10 @@
     }
 
 .hubpage .hub .section3 {
+    width: 420px;
+    
+    text-align: justify;
+    text-justify: distribute; 
 }
 
     .hubpage .hub .section3 .itemslist {

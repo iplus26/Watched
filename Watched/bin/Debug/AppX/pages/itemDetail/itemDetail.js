@@ -91,15 +91,17 @@
 
             function accessInfo() {
                 
-                document.getElementById("movieTitle").innerText = movieItem.title + " (" + movieItem.year + ")";
-                document.getElementById("moviePoster").src = movieItem.images.large;
-                document.getElementById("description").innerText = movieItem.summary;
+                document.getElementById("hubhero").style.backgroundImage = "url(http://img3.douban.com/view/photo/photo/public/p2224584471.jpg)";
 
-                var x;
-                for (x in movieItem.rating) {
-                    document.getElementById("rateDetail").innerText += x + ", ";//= "豆瓣 " + movieItem.rating.numRaters + " 人评分";
-                }
-               
+                document.getElementById("movieTitle").innerText = movieItem.title + " (" + movieItem.year + ")";
+                document.getElementById("title").innerText = movieItem.title + " (" + movieItem.year + ")";
+                document.getElementById("original_title").innerText = movieItem.original_title;
+                document.getElementById("moviePoster").src = movieItem.images.large;
+                document.getElementById("description").innerHTML = movieItem.summary.replace(/\n/, "</p><p>") + "</p>";
+
+               // document.getElementById("rateDetail").innerText = "豆瓣 " + movieItem.ratings_count + " 人评分";
+                document.getElementById("movieLink").href += "subject/" + movieItem.id;
+                document.getElementById("genres").innerText = movieItem.genres.join(" / ");
 
 
                 //var rate = document.getElementById("movierate").winControl;

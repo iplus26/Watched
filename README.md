@@ -5,6 +5,7 @@
 ![Imgur](http://i.imgur.com/EjqRgdF.jpg)
 
 # todo
+* **urgent:** 修复一个已知的 bug: 从首页点进去会错乱成口碑榜的其他电影，应该是 List 的问题
 * **important & urgent:** 电影页面，use Hub UI. (ME)
 	* 豆瓣的基本信息，IMDb 信息等
 	* 跳转播放预告片、在线观看等

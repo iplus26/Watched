@@ -25,33 +25,50 @@
 
         <section aria-label="Main content" role="main">
             <div class="hub" data-win-control="WinJS.UI.Hub">
-                <div class="hero" data-win-control="WinJS.UI.HubSection">
+                <div id="hubhero" class="hero" data-win-control="WinJS.UI.HubSection">
                 </div>
 
 
-                <div class="section1" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'section1'}}">
+                <div class="section1" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'brief'}}">
                     <div id="section1">
-                        <img id="moviePoster" src="" height="300"/>
-                        
-                        <br />
-                        <br />
+                        <img id="moviePoster" src="" height="300" />
 
-                        <div id="movierate" class="win-star" data-win-control="WinJS.UI.Rating" data-win-options=" {averageRating: 3, maxRating: 5, disabled: true}"></div>
-                        
+                        <p>
+
+                            <span id="title"></span>
+
+                            <br />
+
+                            <span id="original_title" class="subtext"></span>
+
+                        </p>
+
+                        <div id="movierate" class="win-star" data-win-control="WinJS.UI.Rating" data-win-options=" {averageRating: 3, maxRating: 5, disabled: true}"></div> 豆瓣
                         <br />
-                        <span id="rateDetail">评分数据来自豆瓣</span>
+                        <div id="imdbrate" class="win-star" data-win-control="WinJS.UI.Rating" data-win-options=" {averageRating: 3, maxRating: 5, disabled: true}"></div> IMDb
+
+                        <p id="rateDetail"></p>
+
+                        <p id="genres"></p>
+
+
+
+                        <br />
+                        <a id="movieLink" href="http://api.douban.com/v2/movie/">数据来自豆瓣</a>
                     </div>
                 </div>
                 
-                <div class="section2" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': '电影简介'}}">
-                    <div id="section1">
-                        <span id="description">暂无简介</span>
-
-
+                <div class="section2" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'casts'}}">
+                    <div id="section2">
+                        <span id="casts">这里用 ListView 显示导演和演员</span>
                     </div>
                 </div>
 
-
+                <div class="section3" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'summary'}}">
+                    <div id="section3">
+                        <span id="description">暂无简介</span>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
