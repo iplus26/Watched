@@ -19,23 +19,22 @@
         <header aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">App1</span>
+                <span class="pagetitle" id="movieTitle">movie title</span>
             </h1>
         </header>
 
         <section aria-label="Main content" role="main">
-            <!-- Customize the Hub control by modifying the HubSection controls here. -->
-
             <div class="hub" data-win-control="WinJS.UI.Hub">
                 <div class="hero" data-win-control="WinJS.UI.HubSection">
                 </div>
 
 
                 <div class="section1" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': '电影简介'}}">
-                    <div id="basicBinding">
-                        This is detail of movie - 
-                        <button id="btnGetName" >alert!</button>
-                        <span id="movieSpan" data-win-bind="innerText: subtitle"></span>
+                    <div id="section1">
+                        <img id="poster" height="300" src="" />
+                        <span id="description">暂无简介</span>
+
+
                     </div>
                 </div>
                 

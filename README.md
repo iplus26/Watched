@@ -9,12 +9,12 @@
 	* 豆瓣的基本信息，IMDb 信息等
 	* 跳转播放预告片、在线观看等
 * **important:** Charms Bar Search（精哥）
-* **important:** * 用豆瓣的 advance 权限标记电影（小虚），获取关注人的短评
 * icon and launch picture. (韩)
 * Charms Bar Share based on screen shot of the movie item detail page. [Document](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.showshareui.aspx)
 * 影人页面
 * 剧集页面（剧集使用 Trakt.tv 的 API 获取剧集更新，监测 kickass 的资源更新，在线播放等）
 * 「看过」的更多功能
+* *豆瓣在新版 API 中去掉了收藏电影的接口，科科*
 
 # update
 

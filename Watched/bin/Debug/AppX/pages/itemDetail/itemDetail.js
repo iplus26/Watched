@@ -5,36 +5,64 @@
     var session = WinJS.Application.sessionState;
     var util = WinJS.Utilities;
 
-    // Get the groups used by the data-bound sections of the Hub.
-   
+    // 请忽略这一页狂草的代码 反正我做出来了 :)
+
+    var Movie = WinJS.Class.define(
+            function ( movieItem ) {
+                this._initObservable();
+                this.title = "sample title";
+                this.info = "change the movie info";
+                this.timeout = null;
+            },
+
+            {
+                _accessInfo: function () {
+                    
+                },
+
+                start: function () {
+                    this._accessInfo();
+                },
+
+                
+                stop: function () {
+                    // Stops the process.
+                }
+
+
+
+            }
+
+        );
+    // - - define Movie Class end.
+
+    WinJS.Class.mix(Movie, WinJS.Binding.mixin, WinJS.Binding.expandProperties({ name: "", color: "" }));
 
     function alert(message) {
         var msgBox = new Windows.UI.Popups.MessageDialog(message);
         msgBox.showAsync();
     }
 
+    var movieItem;
+
     WinJS.UI.Pages.define("/pages/itemDetail/itemDetail.html", {
         _items: null,
 
+        
+        
         init: function (element, options) {
             // options.item = [item.group.key, item.id]
 
-            var movieItem = Data.resolveItemReference(options.item);
+             movieItem = Data.resolveItemReference(options.item);
             // 无论这个item是从groupDetail, or groupedItem, or searchResult链接过来的
             // 都具有一些豆瓣电影object的基本信息
             // 根据这个item.id去查询item detail获得一个更完整的对象
 
             movieItem = Data.getMovie(movieItem.id);
 
-            // 说真的我不知道下面两句话是干什么用的 所以留着等删吧
-            // this._items = Data.getItemsFromGroup(group);
-            // this._pageTitle = movieItem.title;
-
+            //alert(movieItem.title + "的页面还没有开发好 :）");
             
-            var personDiv = document.querySelector('#movieSpan');
-            WinJS.Binding.processAll(personDiv, movieItem);
-
-            alert(personDiv);
+           
             
         },
        
@@ -57,7 +85,29 @@
                 }
             }
 
-            // TODO: Initialize the page here.
+
+            // below
+
+            var movie = new Movie();
+
+            movie.bind("info", accessInfo);
+
+           // movie.bind("color", onColorChange);
+
+            function accessInfo() {
+                movie.title = movieItem.title;
+                movie.summary = movie.summary;
+
+                document.getElementById("movieTitle").innerText = movie.title;
+
+                document.getElementById("description").innerText = movieItem.summary;
+            }
+
+
+
+            alert(movie.title + "的页面还没有开发好 :）");
+
+            movie.start();
         },
         
         itemDataSource: item.dataSource,
