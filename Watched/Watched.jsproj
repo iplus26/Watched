@@ -82,9 +82,6 @@
     <Content Include="pages\itemDetail\itemDetail.css" />
     <Content Include="pages\itemDetail\itemDetail.html" />
     <Content Include="pages\itemDetail\itemDetail.js" />
-    <Content Include="pages\itemDetail\itemDetail_old.css" />
-    <Content Include="pages\itemDetail\itemDetail_old.html" />
-    <Content Include="pages\itemDetail\itemDetail_old.js" />
     <Content Include="pages\groupDetail\groupDetail.css" />
     <Content Include="pages\groupDetail\groupDetail.html" />
     <Content Include="pages\groupDetail\groupDetail.js" />

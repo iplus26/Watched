@@ -43,6 +43,13 @@
         msgBox.showAsync();
     }
 
+    function parseToDOM(str) {
+        var div = document.createElement("div");
+        if (typeof str == "string")
+            div.innerHTML = str;
+        return div;//.childNodes;
+    }
+
     var movieItem;
 
     WinJS.UI.Pages.define("/pages/itemDetail/itemDetail.html", {
@@ -87,11 +94,15 @@
 
             movie.bind("info", accessInfo);
 
-           // movie.bind("color", onColorChange);
-
             function accessInfo() {
-                
-                document.getElementById("hubhero").style.backgroundImage = "url(http://img3.douban.com/view/photo/photo/public/p2224584471.jpg)";
+
+                var xhr = new XMLHttpRequest();
+                var posterPage = "http://movie.douban.com/subject/" + movieItem.id + "/photos";//?type=W&start=0&sortby=vote&size=1920x1080&subtype=a";
+                xhr.open("get", posterPage, false);
+                xhr.send(null);
+                var posterPageDOM = parseToDOM(xhr.responseText);
+                var posterUrl = posterPageDOM.querySelector("img[src^='http://img5.douban.com/view/photo/']").src.replace(/thumb/, "photo");
+                document.getElementById("hubhero").style.backgroundImage = "url(" + posterUrl + ")";
 
                 document.getElementById("movieTitle").innerText = movieItem.title + " (" + movieItem.year + ")";
                 document.getElementById("title").innerText = movieItem.title + " (" + movieItem.year + ")";
@@ -102,16 +113,7 @@
                // document.getElementById("rateDetail").innerText = "豆瓣 " + movieItem.ratings_count + " 人评分";
                 document.getElementById("movieLink").href += "subject/" + movieItem.id;
                 document.getElementById("genres").innerText = movieItem.genres.join(" / ");
-
-
-                //var rate = document.getElementById("movierate").winControl;
-                //rate.averageRating = 1;
-               
             }
-
-
-
-            //alert(movieItem.image);
 
             movie.start();
         },

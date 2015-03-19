@@ -5,7 +5,6 @@
 ![Imgur](http://i.imgur.com/EjqRgdF.jpg)
 
 # todo
-* **urgent:** 修复一个已知的 bug: 从首页点进去会错乱成口碑榜的其他电影，应该是 List 的问题
 * **important & urgent:** 电影页面，use Hub UI. (ME)
 	* 豆瓣的基本信息，IMDb 信息等
 	* 跳转播放预告片、在线观看等
@@ -18,10 +17,21 @@
 * *豆瓣在新版 API 中去掉了收藏电影的接口，科科*
 
 # update
+2015.03.19
+
+* itemDetail Page
+	* 海报（豆瓣不向普通权限开放海报的接口，自己 hack 了一下）
+
+2015.03.18
+
+* add itemDetail Page
+	* 基本信息
+	* CSS 文本两端对齐 [知乎](http://www.zhihu.com/question/19895400/answer/13383826)
+* fix a bug: 首页点进去会错乱到口碑榜的其他电影
 
 2015.03.11
 
-* add 豆瓣电影口碑榜
+* add 豆瓣电影口碑榜（豆瓣不向普通权限开放口碑榜接口, dirty hack）
 
 2015.03.10
 

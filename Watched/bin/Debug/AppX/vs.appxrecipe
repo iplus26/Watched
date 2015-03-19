@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-03-18T16:58:22.720</Modified>
+      <Modified>2015-03-19T06:51:29.083</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -30,11 +30,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.css">
       <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail_old.css">
-      <PackagePath>pages\itemDetail\itemDetail_old.css</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-19T06:51:27.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.css">
       <PackagePath>pages\groupDetail\groupDetail.css</PackagePath>
@@ -139,7 +135,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-19T07:08:53.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\default.js">
       <PackagePath>js\default.js</PackagePath>
@@ -151,11 +147,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.js">
       <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
-      <Modified>2015-03-18T17:05:23.678</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail_old.js">
-      <PackagePath>pages\itemDetail\itemDetail_old.js</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-19T06:54:50.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.js">
       <PackagePath>pages\groupDetail\groupDetail.js</PackagePath>
@@ -163,7 +155,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupedItems\groupedItems.js">
       <PackagePath>pages\groupedItems\groupedItems.js</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-19T07:08:53.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.js">
       <PackagePath>pages\searchResult\searchResults.js</PackagePath>
@@ -171,10 +163,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.html">
       <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
-      <Modified>2015-03-18T17:01:16.019</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail_old.html">
-      <PackagePath>pages\itemDetail\itemDetail_old.html</PackagePath>
       <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.html">
@@ -195,7 +183,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-03-18T16:58:22.611</Modified>
+      <Modified>2015-03-19T06:51:28.692</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

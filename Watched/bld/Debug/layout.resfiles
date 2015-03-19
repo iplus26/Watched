@@ -30,9 +30,6 @@ pages\groupedItems\groupedItems.js
 pages\itemDetail\itemDetail.css
 pages\itemDetail\itemDetail.html
 pages\itemDetail\itemDetail.js
-pages\itemDetail\itemDetail_old.css
-pages\itemDetail\itemDetail_old.html
-pages\itemDetail\itemDetail_old.js
 pages\searchResult\searchResults.css
 pages\searchResult\searchResults.html
 pages\searchResult\searchResults.js

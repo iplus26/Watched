@@ -29,7 +29,7 @@
 
         // 点击 item 项
         _itemInvoked: function (args) {
-            var item = Data.items.getAt(args.detail.itemIndex);
+            var item = Data.itemsLess.getAt(args.detail.itemIndex);
             nav.navigate("/pages/itemDetail/itemDetail.html", { item: Data.getItemReference(item) });
         }
     });
