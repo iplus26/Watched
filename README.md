@@ -23,7 +23,8 @@
 		* [Nicholas C. Zakas - Speed up your JavaScript, Part 4](http://www.nczonline.net/blog/2009/02/03/speed-up-your-javascript-part-4/)
 		* `You API access rate limit has been exceeded. Contact api-master@douban.com if you want higher limit. `
 	* 凌晨：海报推荐的一个小bug，现在返回的是被推荐最多的一张海报
-	附图为[「美丽人生」的截屏](http://movie.douban.com/photos/photo/825925921/)
+	
+		附图为[「美丽人生」的截屏](http://movie.douban.com/photos/photo/825925921/)
 	![Imgur](http://i.imgur.com/GCl6i82.jpg)
 
 2015.03.19
