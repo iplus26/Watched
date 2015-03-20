@@ -17,6 +17,11 @@
 * *豆瓣在新版 API 中去掉了收藏电影的接口，科科*
 
 # update
+2015.03.20
+
+* itemDetail Page
+	* 降伏 WinJS.UI.Rating
+
 2015.03.19
 
 * itemDetail Page

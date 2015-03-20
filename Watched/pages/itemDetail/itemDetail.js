@@ -73,7 +73,7 @@
                  if (movieItem.directors[i].avatars != null)
                      movieItem.directors[i].picture = movieItem.directors[i].avatars.medium;
                  else
-                     movieItem.directors[i].picture = "/images/unknown.jpg";
+                     movieItem.directors[i].picture = "/images/celebrity-default-medium.gif";
                  movieItem.directors[i].job = "导演";
                  items.push(movieItem.directors[i]);
              }
@@ -81,17 +81,25 @@
                  if (movieItem.casts[i].avatars != null)
                      movieItem.casts[i].picture = movieItem.casts[i].avatars.medium;
                  else
-                     movieItem.casts[i].picture = "/images/unknown.jpg";
+                     movieItem.casts[i].picture = "/images/celebrity-default-medium.gif";
                  movieItem.casts[i].job = "出演";
                  items.push(movieItem.casts[i]);
              }
 
 
-             WinJS.Namespace.define("Sample.ListView", {
-                 data: new WinJS.Binding.List(items)
+             WinJS.Namespace.define("itemDetail", {
+                 casts: new WinJS.Binding.List(items)
              });
              WinJS.UI.processAll();
 
+
+            /*
+             WinJS.UI.processAll().then(function () {
+                 var control = document.getElementById("movierate").winControl;
+
+                 control.averageRating = 4;
+             });
+             */
 
         },
        
@@ -122,7 +130,8 @@
             movie.bind("info", accessInfo);
 
             function accessInfo() {
-
+                
+                // 以下的这一块hack是因为豆瓣并没有向普通权限（就是我们）开放海报API
                 var xhr = new XMLHttpRequest();
                 var posterPage = "http://movie.douban.com/subject/" + movieItem.id + "/photos";//?type=W&start=0&sortby=vote&size=1920x1080&subtype=a";
                 xhr.open("get", posterPage, false);
@@ -130,19 +139,67 @@
                 var posterPageDOM = parseToDOM(xhr.responseText);
                 var posterUrl = posterPageDOM.querySelector("img[src^='http://img5.douban.com/view/photo/']").src.replace(/thumb/, "photo");
                 document.getElementById("hubhero").style.backgroundImage = "url(" + posterUrl + ")";
-
+                
                 document.getElementById("movieTitle").innerText = movieItem.title + " (" + movieItem.year + ")";
+
+                // 下面这一段代码是因为 Nicholas C. Zakas - Speed up your JavaScript, Part 4 说 fragment 能够提高修改 DOM 的效率
+                // http://www.nczonline.net/blog/2009/02/03/speed-up-your-javascript-part-4/
+
+                var section1 = document.getElementById("section1");
+
+                var fragment1 = document.createDocumentFragment();
+
+                var poster = document.createElement("img");
+                poster.src = movieItem.images.large;
+                poster.height = 300;
+                fragment1.appendChild(poster);
+
+                var title = document.createElement("p");
+                var title_span = document.createElement("span");
+                title_span.textContent = movieItem.title + " (" + movieItem.year + ")";
+                var original_title_span = document.createElement("span");
+                original_title_span.textContent = movieItem.original_title;
+                title.appendChild(title_span);
+                title.appendChild(document.createElement("br"));
+                title.appendChild(original_title_span);
+                fragment1.appendChild(title);
+
+                var douban_rate = document.createElement("div");
+                var doubanRateControl = new WinJS.UI.Rating(douban_rate, { averageRating: movieItem.rating.average / 2, maxRating: 5, disabled: true });
+                fragment1.appendChild(douban_rate);
+                fragment1.appendChild(document.createElement("br"));
+
+                var genres = document.createElement("p");
+                genres.innerText = movieItem.genres.join(" / ");
+                fragment1.appendChild(genres);
+
+                var countries = document.createElement("p");
+                countries.innerText = movieItem.countries.join(" / ");
+                fragment1.appendChild(countries);
+
+                var douban_link = document.createElement("a");
+                douban_link.href = "http://api.douban.com/v2/movie/subject/" + movieItem.id;
+                douban_link.textContent = "数据来自豆瓣"
+                fragment1.appendChild(douban_link);
+
+                section1.appendChild(fragment1);
+                
+
+                /* old code
                 document.getElementById("title").innerText = movieItem.title + " (" + movieItem.year + ")";
                 document.getElementById("original_title").innerText = movieItem.original_title;
                 document.getElementById("moviePoster").src = movieItem.images.large;
-                document.getElementById("description").innerHTML = movieItem.summary.replace(/\n/, "</p><p>") + "</p>";
-
-               // document.getElementById("rateDetail").innerText = "豆瓣 " + movieItem.ratings_count + " 人评分";
                 document.getElementById("movieLink").href += "subject/" + movieItem.id;
                 document.getElementById("genres").innerText = movieItem.genres.join(" / ");
                 document.getElementById("countries").innerText = movieItem.countries.join(" / ");
-            }
+                var doubanRateDiv = document.querySelector("#doubanRateDiv");
+                var doubanRateControl = new WinJS.UI.Rating(doubanRateDiv, { averageRating: movieItem.rating.average / 2, maxRating: 5, disabled: true });
+                */
 
+                var description = document.getElementById("description");
+                description.innerHTML = movieItem.summary.replace(/\n/, "</p><p>") + "</p>";
+                description.nextElementSibling.src = posterUrl;
+            }
             movie.start();
         },
         

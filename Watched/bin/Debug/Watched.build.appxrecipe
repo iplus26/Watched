@@ -102,8 +102,8 @@
       <PackagePath>images\Wide310x150Logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\unknown.jpg">
-      <PackagePath>images\unknown.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\celebrity-default-medium.gif">
+      <PackagePath>images\celebrity-default-medium.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\data.js">
       <PackagePath>js\data.js</PackagePath>

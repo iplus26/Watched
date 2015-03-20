@@ -30,30 +30,7 @@
 
 
                 <div class="section1" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'brief'}}">
-                    <div id="section1">
-                        <img id="moviePoster" src="" height="300" />
-
-                        <p>
-
-                            <span id="title"></span>
-
-                            <br />
-
-                            <span id="original_title" class="subtext"></span>
-
-                        </p>
-
-                        <div id="movierate" class="win-star" data-win-control="WinJS.UI.Rating" data-win-options=" {averageRating: 3, maxRating: 5, disabled: true}"></div> 豆瓣
-                        <br />
-                        <div id="imdbrate" class="win-star" data-win-control="WinJS.UI.Rating" data-win-options=" {averageRating: 3, maxRating: 5, disabled: true}"></div> IMDb
-
-                        <p id="rateDetail"></p>
-
-                        <p id="genres"></p>
-                        <p id="countries"></p>
-                        <br />
-                        <a id="movieLink" href="http://api.douban.com/v2/movie/">数据来自豆瓣</a>
-                    </div>
+                    <div id="section1"></div>
                 </div>
                 
                 <div class="section2" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'casts'}}">
@@ -76,7 +53,7 @@
                              class="win-selectionstylefilled"
                              data-win-control="WinJS.UI.ListView"
                              data-win-options="{
-                                itemDataSource: Sample.ListView.data.dataSource,
+                                itemDataSource: itemDetail.casts.dataSource,
                                 itemTemplate: select('.smallListIconTextTemplate'),
                                 selectionMode: 'none',
                                 tapBehavior: 'none',
@@ -91,8 +68,10 @@
                 <div class="section3" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'summary'}}">
                     <div id="section3">
                         <span id="description">暂无简介</span>
+                        <img width="420" />
                     </div>
                 </div>
+
             </div>
         </section>
     </div>
