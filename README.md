@@ -5,10 +5,8 @@
 ![Imgur](http://i.imgur.com/EjqRgdF.jpg)
 
 # todo
-* **important & urgent:** 电影页面，use Hub UI. (ME)
-	* 豆瓣的基本信息，IMDb 信息等
-	* 跳转播放预告片、在线观看等
-* **important:** Charms Bar Search（精哥）
+* **important:** Charms Bar Search
+* more in itemDetail Page...if Douban allows.
 * icon and launch picture. (韩)
 * Charms Bar Share based on screen shot of the movie item detail page. [Document](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.showshareui.aspx)
 * 影人页面
@@ -21,6 +19,12 @@
 
 * itemDetail Page
 	* 降伏 WinJS.UI.Rating
+	* 凌晨：dirty 地解决了卡顿问题，解决方法包括
+		* [Nicholas C. Zakas - Speed up your JavaScript, Part 4](http://www.nczonline.net/blog/2009/02/03/speed-up-your-javascript-part-4/)
+		* `You API access rate limit has been exceeded. Contact api-master@douban.com if you want higher limit. `
+	* 凌晨：海报推荐的一个小bug，现在返回的是被推荐最多的一张海报
+	附图为[「美丽人生」的截屏](http://movie.douban.com/photos/photo/825925921/)
+	![Imgur](http://i.imgur.com/GCl6i82.jpg)
 
 2015.03.19
 

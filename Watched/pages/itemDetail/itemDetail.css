@@ -106,62 +106,7 @@
 
 .hubpage .hub .section3 {
     width: 420px;
-
+    max-height: 100px;
     text-align: justify;
     text-justify: distribute; 
 }
-
-    .hubpage .hub .section3 .itemslist {
-        height: 100%;
-        margin-left: -10px;
-        margin-right: -10px;
-        margin-top: -5px;
-    }
-
-    .hubpage .hub .section3 .win-container {
-        margin-bottom: 36px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .hubpage .hub .section3 .win-item {
-        height: 229px;
-        width: 310px;
-    }
-
-        .hubpage .hub .section3 .win-item img {
-            height: 150px;
-            margin-bottom: 10px;
-            width: 310px;
-        }
-
-.hubpage .hub .section4 {
-    width: 400px;
-}
-
-    .hubpage .hub .section4 .win-hub-section-content {
-        overflow-y: hidden;
-    }
-
-    .hubpage .hub .section4 .top-image-row {
-        height: 260px;
-        margin-bottom: 10px;
-        width: 400px;
-    }
-
-        .hubpage .hub .section4 .top-image-row img {
-            height: 100%;
-            width: 100%;
-        }
-
-    .hubpage .hub .section4 .sub-image-row {
-        margin-bottom: 20px;
-        display: -ms-flexbox;
-        -ms-flex-flow: row nowrap;
-        -ms-flex-pack: justify;
-    }
-
-        .hubpage .hub .section4 .sub-image-row img {
-            height: 95px;
-            width: 130px;
-        }

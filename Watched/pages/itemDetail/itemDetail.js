@@ -64,7 +64,7 @@
             // 无论这个item是从groupDetail, or groupedItem, or searchResult链接过来的
             // 都具有一些豆瓣电影object的基本信息
             // 根据这个item.id去查询item detail获得一个更完整的对象
-             movieItem = Data.getMovie(movieItem.id);
+             
 
              var items = [];
 
@@ -91,16 +91,6 @@
                  casts: new WinJS.Binding.List(items)
              });
              WinJS.UI.processAll();
-
-
-            /*
-             WinJS.UI.processAll().then(function () {
-                 var control = document.getElementById("movierate").winControl;
-
-                 control.averageRating = 4;
-             });
-             */
-
         },
        
         
@@ -122,22 +112,19 @@
                 }
             }
 
-
             // below
-
             var movie = new Movie();
-
             movie.bind("info", accessInfo);
 
             function accessInfo() {
-                
+                // movieItem = Data.getMovie(movieItem.id);
                 // 以下的这一块hack是因为豆瓣并没有向普通权限（就是我们）开放海报API
                 var xhr = new XMLHttpRequest();
                 var posterPage = "http://movie.douban.com/subject/" + movieItem.id + "/photos";//?type=W&start=0&sortby=vote&size=1920x1080&subtype=a";
                 xhr.open("get", posterPage, false);
                 xhr.send(null);
                 var posterPageDOM = parseToDOM(xhr.responseText);
-                var posterUrl = posterPageDOM.querySelector("img[src^='http://img5.douban.com/view/photo/']").src.replace(/thumb/, "photo");
+                var posterUrl = posterPageDOM.querySelector("img[src^='http://img5.douban.com/view/photo/'], img[src^='http://img3.douban.com/view/photo/']").src.replace(/thumb/, "raw");
                 document.getElementById("hubhero").style.backgroundImage = "url(" + posterUrl + ")";
                 
                 document.getElementById("movieTitle").innerText = movieItem.title + " (" + movieItem.year + ")";
@@ -159,42 +146,59 @@
                 title_span.textContent = movieItem.title + " (" + movieItem.year + ")";
                 var original_title_span = document.createElement("span");
                 original_title_span.textContent = movieItem.original_title;
+                original_title_span.style.color = "#919191";
                 title.appendChild(title_span);
                 title.appendChild(document.createElement("br"));
                 title.appendChild(original_title_span);
                 fragment1.appendChild(title);
 
-                var douban_rate = document.createElement("div");
-                var doubanRateControl = new WinJS.UI.Rating(douban_rate, { averageRating: movieItem.rating.average / 2, maxRating: 5, disabled: true });
-                fragment1.appendChild(douban_rate);
+                var douban_rating_str = '(' + function () {
+                    var rate = movieItem.rating.average;
+                    var votes = movieItem.ratings_count;
+                    
+                    if (rate == 0) {
+                        return '无人评分';
+                    } else if (votes > 10000) {
+                        return (votes / 10000).toFixed(1) + '万人评分';
+                    } else {
+                        return votes + '人评分';
+                    }
+
+                }() + ')';
+
+                    //(movieItem.rating.average == 0) ? '无人评分' : ('(' + (movieItem.ratings_count >= 10000 ? ((movieItem.ratings_count / 10000).toFixed(1) + "万") : movieItem.ratings_count) + "人评分)");
+                
+                var douban_rate_span = document.createElement("span");
+                douban_rate_span.textContent = movieItem.rating.average.toFixed(1);
+                douban_rate_span.style.fontSize = "2em";
+                fragment1.appendChild(douban_rate_span);
+                var ratings_count = document.createElement("span");
+                ratings_count.textContent = "/10 " + douban_rating_str;
+
+                fragment1.appendChild(ratings_count);
+
+                fragment1.appendChild(document.createElement("br"));
+
+                var douban_rate_control = document.createElement("div");
+                var doubanRateControl = new WinJS.UI.Rating(douban_rate_control, { averageRating: movieItem.rating.average / 2, maxRating: 5, disabled: true });
+                fragment1.appendChild(douban_rate_control);
                 fragment1.appendChild(document.createElement("br"));
 
                 var genres = document.createElement("p");
                 genres.innerText = movieItem.genres.join(" / ");
                 fragment1.appendChild(genres);
 
+                
                 var countries = document.createElement("p");
                 countries.innerText = movieItem.countries.join(" / ");
                 fragment1.appendChild(countries);
-
+                
                 var douban_link = document.createElement("a");
-                douban_link.href = "http://api.douban.com/v2/movie/subject/" + movieItem.id;
+                douban_link.href = "http://movie.douban.com/subject/" + movieItem.id + "/photos";
                 douban_link.textContent = "数据来自豆瓣"
                 fragment1.appendChild(douban_link);
 
                 section1.appendChild(fragment1);
-                
-
-                /* old code
-                document.getElementById("title").innerText = movieItem.title + " (" + movieItem.year + ")";
-                document.getElementById("original_title").innerText = movieItem.original_title;
-                document.getElementById("moviePoster").src = movieItem.images.large;
-                document.getElementById("movieLink").href += "subject/" + movieItem.id;
-                document.getElementById("genres").innerText = movieItem.genres.join(" / ");
-                document.getElementById("countries").innerText = movieItem.countries.join(" / ");
-                var doubanRateDiv = document.querySelector("#doubanRateDiv");
-                var doubanRateControl = new WinJS.UI.Rating(doubanRateDiv, { averageRating: movieItem.rating.average / 2, maxRating: 5, disabled: true });
-                */
 
                 var description = document.getElementById("description");
                 description.innerHTML = movieItem.summary.replace(/\n/, "</p><p>") + "</p>";
