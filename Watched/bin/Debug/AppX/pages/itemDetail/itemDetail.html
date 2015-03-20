@@ -50,9 +50,7 @@
                         <p id="rateDetail"></p>
 
                         <p id="genres"></p>
-
-
-
+                        <p id="countries"></p>
                         <br />
                         <a id="movieLink" href="http://api.douban.com/v2/movie/">数据来自豆瓣</a>
                     </div>
@@ -60,7 +58,33 @@
                 
                 <div class="section2" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'casts'}}">
                     <div id="section2">
-                        <span id="casts">这里用 ListView 显示导演和演员</span>
+                        
+                        <!-- Simple template for the ListView instantiation  -->
+                        <div class="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                            <div class="smallListIconTextItem">
+                                <img src="#" class="smallListIconTextItem-Image" data-win-bind="src: picture" />
+                                <div class="smallListIconTextItem-Detail">
+                                    <h4 data-win-bind="textContent: name"></h4>
+                                    <h6 data-win-bind="textContent: job"></h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- The declarative markup necesary for ListView instantiation -->
+                        <!-- Call WinJS.UI.processAll() in your initialization code -->
+                        <div id="listView"
+                             class="win-selectionstylefilled"
+                             data-win-control="WinJS.UI.ListView"
+                             data-win-options="{
+                                itemDataSource: Sample.ListView.data.dataSource,
+                                itemTemplate: select('.smallListIconTextTemplate'),
+                                selectionMode: 'none',
+                                tapBehavior: 'none',
+                                layout: { type: WinJS.UI.ListLayout }
+                             }">
+                        </div>
+
+
                     </div>
                 </div>
 

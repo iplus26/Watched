@@ -67,6 +67,43 @@
         margin-bottom: 15px;
     }
 
+    /* Template for the items in the ListViews in this sample */    
+    .hubpage .hub .section2 .win-listview 
+    {
+        height: 480px; 
+    }
+    
+       
+    .hubpage .hub .section2 .smallListIconTextItem
+    {
+        width: 100%;
+        height: 104px;
+        padding: 2px;
+        overflow: hidden;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .hubpage .hub .section2 .smallListIconTextItem img.smallListIconTextItem-Image 
+    {
+        width: 70px;
+        height: 100px;
+        margin: 2px;
+        margin-right:20px;
+    }
+
+    .hubpage .hub .section2 .smallListIconTextItem .smallListIconTextItem-Detail
+    {
+        margin: 2px;
+    }
+
+    .hubpage .hub .section2 .listLayoutTopHeaderTemplateRoot, .gridLayoutLeftHeaderTemplateRoot {
+        font-size: larger;
+        margin-left: 0px;
+    }
+
+
 .hubpage .hub .section3 {
     width: 420px;
     

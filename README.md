@@ -21,6 +21,7 @@
 
 * itemDetail Page
 	* 海报（豆瓣不向普通权限开放海报的接口，自己 hack 了一下）
+	* 角儿 ListView
 
 2015.03.18
 

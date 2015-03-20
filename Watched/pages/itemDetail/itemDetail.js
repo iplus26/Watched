@@ -66,6 +66,33 @@
             // 根据这个item.id去查询item detail获得一个更完整的对象
              movieItem = Data.getMovie(movieItem.id);
 
+             var items = [];
+
+             var i = 0;
+             for (i = 0; i < movieItem.directors.length; i++) {
+                 if (movieItem.directors[i].avatars != null)
+                     movieItem.directors[i].picture = movieItem.directors[i].avatars.medium;
+                 else
+                     movieItem.directors[i].picture = "/images/unknown.jpg";
+                 movieItem.directors[i].job = "导演";
+                 items.push(movieItem.directors[i]);
+             }
+             for (i = 0; i < movieItem.casts.length; i++) {
+                 if (movieItem.casts[i].avatars != null)
+                     movieItem.casts[i].picture = movieItem.casts[i].avatars.medium;
+                 else
+                     movieItem.casts[i].picture = "/images/unknown.jpg";
+                 movieItem.casts[i].job = "出演";
+                 items.push(movieItem.casts[i]);
+             }
+
+
+             WinJS.Namespace.define("Sample.ListView", {
+                 data: new WinJS.Binding.List(items)
+             });
+             WinJS.UI.processAll();
+
+
         },
        
         
@@ -113,6 +140,7 @@
                // document.getElementById("rateDetail").innerText = "豆瓣 " + movieItem.ratings_count + " 人评分";
                 document.getElementById("movieLink").href += "subject/" + movieItem.id;
                 document.getElementById("genres").innerText = movieItem.genres.join(" / ");
+                document.getElementById("countries").innerText = movieItem.countries.join(" / ");
             }
 
             movie.start();
