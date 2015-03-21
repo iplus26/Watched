@@ -54,9 +54,10 @@
             this._filters = [];
             this._filters.push({ results: null, text: "All", predicate: function (item) { return true; } });
 
-            // TODO: Replace or remove example filters.
-            this._filters.push({ results: null, text: "Group 1", predicate: function (item) { return item.group.key === "group1"; } });
-            this._filters.push({ results: null, text: "Group 2+", predicate: function (item) { return item.group.key !== "group1"; } });
+
+            // 之后更改这个代码可以实现显示 top 250 榜单里面的
+            //this._filters.push({ results: null, text: "Group 1", predicate: function (item) { return item.group.key === "group1"; } });
+            //this._filters.push({ results: null, text: "Group 2+", predicate: function (item) { return item.group.key !== "group1"; } });
         },
 
         // This function executes each step required to perform a search.
@@ -132,22 +133,11 @@
         // provided query.
         _searchData: function (queryText) {
 
-            /*
-            var originalResults;
-            // TODO: Perform the appropriate search on your data.
-            if (window.Data) {
-                originalResults = Data.items.createFiltered(function (item) {
-                    return (item.title.indexOf(queryText) >= 0 || item.subtitle.indexOf(queryText) >= 0 || item.description.indexOf(queryText) >= 0);
-                });
-            } else {
-                originalResults = new WinJS.Binding.List();
-            }
-            return originalResults;
-            */
-
             var movies;
             movies = Data.getMovies("/v2/movie/search?q=" + encodeURI(queryText));
-
+            for (var i = 0; i < movies.length; i++) {
+                movies[i].backgroundImage = movies[i].images.medium;
+            }
             var movieResults = new WinJS.Binding.List(movies);
 
             return movieResults;

@@ -30,7 +30,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.css">
       <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-21T13:56:42.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.css">
       <PackagePath>pages\groupDetail\groupDetail.css</PackagePath>
@@ -38,11 +38,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupedItems\groupedItems.css">
       <PackagePath>pages\groupedItems\groupedItems.css</PackagePath>
-      <Modified>2015-03-21T13:00:18.686</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.css">
       <PackagePath>pages\searchResult\searchResults.css</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-21T14:43:04.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\BadgeLogo.scale-180.png">
       <PackagePath>images\BadgeLogo.scale-180.png</PackagePath>
@@ -139,11 +139,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2015-03-21T04:03:06.372</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-03-21T13:08:58.433</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -151,7 +151,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.js">
       <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-21T14:29:54.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.js">
       <PackagePath>pages\groupDetail\groupDetail.js</PackagePath>
@@ -163,7 +163,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.js">
       <PackagePath>pages\searchResult\searchResults.js</PackagePath>
-      <Modified>2015-03-21T13:10:00.755</Modified>
+      <Modified>2015-03-21T14:37:58.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.html">
       <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
@@ -175,11 +175,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupedItems\groupedItems.html">
       <PackagePath>pages\groupedItems\groupedItems.html</PackagePath>
-      <Modified>2015-03-21T13:08:58.547</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2015-03-21T12:50:56.771</Modified>
+      <Modified>1970-01-01T00:00:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.html">
       <PackagePath>pages\searchResult\searchResults.html</PackagePath>

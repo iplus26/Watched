@@ -127,6 +127,11 @@
                 var posterUrl = posterPageDOM.querySelector("img[src^='http://img5.douban.com/view/photo/'], img[src^='http://img3.douban.com/view/photo/']").src.replace(/thumb/, "raw");
                 document.getElementById("hubhero").style.backgroundImage = "url(" + posterUrl + ")";
                 
+
+                
+                
+                
+
                 document.getElementById("movieTitle").innerText = movieItem.title + " (" + movieItem.year + ")";
 
                 // 下面这一段代码是因为 Nicholas C. Zakas - Speed up your JavaScript, Part 4 说 fragment 能够提高修改 DOM 的效率

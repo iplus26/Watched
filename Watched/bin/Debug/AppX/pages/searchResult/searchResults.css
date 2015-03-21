@@ -1,4 +1,6 @@
-﻿.searchResults header[role=banner] .titlearea {
+﻿body {font-family: DengXian;}
+
+.searchResults header[role=banner] .titlearea {
     -ms-grid-columns: auto 20px 1fr 20px;
     display: -ms-grid;
 }
@@ -15,7 +17,7 @@
 .searchResults section[role=main] {
     /* Define a grid with rows for the filters and results */
     -ms-grid-columns: 1fr;
-    -ms-grid-rows: 180px 1fr;
+    -ms-grid-rows: auto 1fr;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     display: -ms-grid;
@@ -37,12 +39,13 @@
         margin-top: 133px;
         max-width: calc(100% - 120px);
         position: relative;
-        white-space: nowrap;
+        white-space: normal;
         z-index: 1;
+        margin-bottom: 20px; 
     }
 
         .searchResults section[role=main] .filterbar li {
-            display: inline;
+            display: inline-block;
             margin-left: 20px;
             margin-right: 20px;
             margin-top: 5px;
