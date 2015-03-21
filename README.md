@@ -6,6 +6,7 @@
 
 # todo
 * **important:** Charms Bar Search
+* 如果 itemDetail Page 中获取的海报是“偏高”的，那么在 section3 中可能显示并不很美观
 * more in itemDetail Page...if Douban allows.
 * icon and launch picture. (韩)
 * Charms Bar Share based on screen shot of the movie item detail page. [Document](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.showshareui.aspx)
@@ -24,7 +25,7 @@
 		* `You API access rate limit has been exceeded. Contact api-master@douban.com if you want higher limit. `
 	* 凌晨：海报推荐的一个小bug，现在返回的是被推荐最多的一张海报
 	
-		附图为[「美丽人生」的截屏](http://movie.douban.com/photos/photo/825925921/)
+		附图中剧照为[「美丽人生」被推荐最多的剧照](http://movie.douban.com/photos/photo/825925921/)
 	![Imgur](http://i.imgur.com/GCl6i82.jpg)
 
 2015.03.19

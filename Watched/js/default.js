@@ -9,6 +9,17 @@
     var sched = WinJS.Utilities.Scheduler;
     var ui = WinJS.UI;
 
+    function querySubmittedHandler(args) {
+        WinJS.Navigation.navigate('/pages/searchResult/searchResults.html', args.detail);
+    }
+
+    WinJS.Namespace.define("SearchUtils",
+    {
+        querySubmittedHandler: WinJS.UI.eventHandler(querySubmittedHandler)
+    }
+    );
+
+
     app.addEventListener("activated", function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
@@ -47,4 +58,7 @@
     };
 
     app.start();
+
+    
+
 })();

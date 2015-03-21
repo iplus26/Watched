@@ -37,10 +37,15 @@
     <div class="fragment groupeditemspage">
         <header aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
-            
             <h1 class="titlearea win-type-ellipsis">
                 <span class="pagetitle">看过 Watched</span>
             </h1>
+            <div class="searchBox"
+                 data-win-control="WinJS.UI.SearchBox"
+                 data-win-options="{placeholderText: 'Search',
+                 focusOnKeyboardInput: true,
+                 onquerysubmitted: SearchUtils.querySubmittedHandler }">
+            </div>
         </header>
         <section aria-label="Main content" role="main">
             <div class="groupeditemslist win-selectionstylefilled" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{

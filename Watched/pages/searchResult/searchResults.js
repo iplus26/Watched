@@ -131,6 +131,8 @@
         // This function populates a WinJS.Binding.List with search results for the
         // provided query.
         _searchData: function (queryText) {
+
+            /*
             var originalResults;
             // TODO: Perform the appropriate search on your data.
             if (window.Data) {
@@ -141,6 +143,15 @@
                 originalResults = new WinJS.Binding.List();
             }
             return originalResults;
+            */
+
+            var movies;
+            movies = Data.getMovies("/v2/movie/search?q=" + encodeURI(queryText));
+
+            var movieResults = new WinJS.Binding.List(movies);
+
+            return movieResults;
+
         }
     });
 })();
