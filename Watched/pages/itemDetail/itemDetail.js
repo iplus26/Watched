@@ -60,7 +60,12 @@
         init: function (element, options) {
             // options.item = [item.group.key, item.id]
 
-             movieItem = Data.resolveItemReference(options.item);
+            if (options.item[0] != 'fromSearch') {
+                movieItem = Data.resolveItemReference(options.item);
+            } else {
+                movieItem = Data.getMovie(options.item[1]);
+            }
+
             // 无论这个item是从groupDetail, or groupedItem, or searchResult链接过来的
             // 都具有一些豆瓣电影object的基本信息
             // 根据这个item.id去查询item detail获得一个更完整的对象
@@ -125,12 +130,8 @@
                 xhr.send(null);
                 var posterPageDOM = parseToDOM(xhr.responseText);
                 var posterUrl = posterPageDOM.querySelector("img[src^='http://img5.douban.com/view/photo/'], img[src^='http://img3.douban.com/view/photo/']").src.replace(/thumb/, "raw");
+                //如果这部电影没有图片 会出错 try catch
                 document.getElementById("hubhero").style.backgroundImage = "url(" + posterUrl + ")";
-                
-
-                
-                
-                
 
                 document.getElementById("movieTitle").innerText = movieItem.title + " (" + movieItem.year + ")";
 

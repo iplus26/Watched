@@ -42,7 +42,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.css">
       <PackagePath>pages\searchResult\searchResults.css</PackagePath>
-      <Modified>2015-03-21T14:43:04.963</Modified>
+      <Modified>2015-03-21T15:51:12.293</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\images\BadgeLogo.scale-180.png">
       <PackagePath>images\BadgeLogo.scale-180.png</PackagePath>
@@ -151,7 +151,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.js">
       <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
-      <Modified>2015-03-21T14:29:54.281</Modified>
+      <Modified>2015-03-21T16:44:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\groupDetail\groupDetail.js">
       <PackagePath>pages\groupDetail\groupDetail.js</PackagePath>
@@ -163,7 +163,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.js">
       <PackagePath>pages\searchResult\searchResults.js</PackagePath>
-      <Modified>2015-03-21T14:37:58.118</Modified>
+      <Modified>2015-03-21T16:49:46.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\itemDetail\itemDetail.html">
       <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
@@ -183,7 +183,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\pages\searchResult\searchResults.html">
       <PackagePath>pages\searchResult\searchResults.html</PackagePath>
-      <Modified>1970-01-01T00:00:00.000</Modified>
+      <Modified>2015-03-21T16:48:42.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>

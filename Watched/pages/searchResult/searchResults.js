@@ -79,11 +79,20 @@
 
         _initializeLayout: function (element) {
             element.querySelector(".titlearea .pagetitle").textContent = "看过 Watched";
-            element.querySelector(".titlearea .pagesubtitle").textContent = "“" + this._lastSearch + '”的搜索结果';
+            element.querySelector(".titlearea .pagesubtitle").innerHTML = "<i>" + this._lastSearch + '</i> 的搜索结果';
         },
 
         _itemInvoked: function (args) {
             args.detail.itemPromise.done(function itemInvoked(item) {
+
+
+                var item = SearchResult.movies.getAt(args.detail.itemIndex);
+                WinJS.Navigation.navigate("/pages/itemDetail/itemDetail.html", { item: ["fromSearch", item.id] });
+                // item: [item.group.key, item.id]
+
+      
+
+
                 // TODO: Navigate to the item that was invoked.
                 // 导航到对应电影的页面 itemDetailPage.html
             });
@@ -139,6 +148,10 @@
                 movies[i].backgroundImage = movies[i].images.medium;
             }
             var movieResults = new WinJS.Binding.List(movies);
+
+            WinJS.Namespace.define("SearchResult", {
+                movies: movieResults
+            })
 
             return movieResults;
 

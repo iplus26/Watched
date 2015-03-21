@@ -30,7 +30,7 @@
     }
 
     .searchResults section[role=main] .filterbar {
-        -ms-font-feature-settings: "case" 1;
+       /* -ms-font-feature-settings: "case" 1;*/
         -ms-grid-row: 1;
         height: auto;
         list-style-type: none;
@@ -80,30 +80,32 @@
 
         .searchResults section[role=main] .resultslist .item {
             /* Define a grid with columns for an icon, spacing and item details */
-            -ms-grid-columns: 40px 10px 1fr;
+            -ms-grid-columns: 110px 10px 1fr;
             -ms-grid-rows: 1fr;
             display: -ms-grid;
-            height: 64px;
+            height: 157px;
             padding-left: 7px;
             padding-right: 7px;
             padding-top: 1px;
-            width: 280px;
+            width: 480px;
         }
 
             .searchResults section[role=main] .resultslist .item .item-image {
                 -ms-grid-column: 1;
                 -ms-grid-row: 1;
-                height: 40px;
-                margin-top: 6px;
-                width: 40px;
+                height: 150px;
+                margin-top: 4px;
+                width: 105px;
             }
 
             .searchResults section[role=main] .resultslist .item .item-content {
+                font-family: DengXian;
                 -ms-grid-column: 3;
                 -ms-grid-row: 1;
             }
 
                 .searchResults section[role=main] .resultslist .item .item-content .item-subtitle, .searchResults section[role=main] .resultslist .item .item-content .item-description {
+                    font-family: DengXian;
                     opacity: 0.6;
                 }
 

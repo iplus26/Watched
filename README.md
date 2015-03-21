@@ -5,9 +5,10 @@
 ![Imgur](http://i.imgur.com/EjqRgdF.jpg)
 
 # todo
-* **important:** Charms Bar Search
-* 如果 itemDetail Page 中获取的海报是“偏高”的，那么在 section3 中可能显示并不很美观
+* more in resultSearch Page...
 * more in itemDetail Page...if Douban allows.
+	* 如果获取的海报是“偏高”的，那么在 section3 中可能显示并不很美观
+	* 更多的功能，比如海报、预告片、在线观看等等
 * icon and launch picture. (韩)
 * Charms Bar Share based on screen shot of the movie item detail page. [Document](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.showshareui.aspx)
 * 影人页面
@@ -16,6 +17,11 @@
 * *豆瓣在新版 API 中去掉了收藏电影的接口，科科*
 
 # update
+2015.03.21
+
+* searchResult Page
+	* 虽然最后并没有使用 Charms Bar 进行搜索，好像是微软把这个控件改掉了，显得非常的 low 逼...但是我们实现了哦耶！
+
 2015.03.20
 
 * itemDetail Page
