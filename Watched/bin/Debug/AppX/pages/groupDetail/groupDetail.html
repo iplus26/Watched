@@ -44,12 +44,13 @@
             <h1 class="titlearea win-type-ellipsis">
                 <span class="pagetitle"></span>
             </h1>
+                
         </header>
         <section aria-label="Main content" role="main">
             <div class="itemslist win-selectionstylefilled" aria-label="List of this group's items" data-win-control="WinJS.UI.ListView" data-win-options="{
                     selectionMode: 'none',
                     layout: {type: WinJS.UI.GridLayout, groupHeaderPosition: 'left'},
-                    currentItem: {type: WinJS.UI.ObjectType.item, index: 0, hasFocus: true},
+                    currentItem: {type: WinJS.UI.ObjectType.item, index: 0, hasFocus: false},
                     groupDataSource: select('.pagecontrol').winControl.groupDataSource,
                     groupHeaderTemplate: select('.headertemplate'),
                     itemDataSource: select('.pagecontrol').winControl.itemDataSource,

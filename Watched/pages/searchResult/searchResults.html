@@ -24,7 +24,8 @@
             <div class="item-content">
                 <h3 class="item-title win-type-x-small win-type-ellipsis" data-win-bind="innerHTML: title searchResults.markText"></h3>
                 <h4 class="item-subtitle win-type-x-small win-type-ellipsis" data-win-bind="innerHTML: subtitle searchResults.markText"></h4>
-                <h4 class="item-description win-type-x-small win-type-ellipsis" data-win-bind="innerHTML: description searchResults.markText"></h4>
+                <h4 class="item-directors-and-casts win-type-x-small win-type-ellipsis" data-win-bind="innerHTML: directorsAndCastsString searchResults.markText"></h4>
+                <h4 class="item-genres win-type-x-small win-type-ellipsis" data-win-bind="innerHTML: genresString searchResults.markText"></h4>
             </div>
         </div>
     </div>
@@ -37,12 +38,15 @@
                 <h1 class="pagetitle win-type-ellipsis"></h1>
                 <h2 class="pagesubtitle win-type-ellipsis"></h2>
             </div>
+            
         </header>
         <section aria-label="Main content" role="main">
             <div class="resultsmessage win-type-x-large">
                 <p>没有搜到，可能是因为:</p>
-                <li>豆瓣服务器又偷懒了</li>
-                <li>你的关键词有误，换一个试试</li>
+                <ul>
+                    <li>豆瓣服务器又偷懒了</li>
+                    <li>你的关键词有误，换一个试试</li>
+                </ul>
             </div>
             <ul class="filterbar"></ul>
             <div class="resultslist win-selectionstylefilled" aria-label="Search results" data-win-control="WinJS.UI.ListView" data-win-options="{

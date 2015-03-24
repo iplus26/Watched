@@ -40,10 +40,9 @@
             <h1 class="titlearea win-type-ellipsis">
                 <span class="pagetitle">看过 Watched</span>
             </h1>
-            <div class="searchBox"
+            <div id="searchBox" class="searchBox"
                  data-win-control="WinJS.UI.SearchBox"
-                 data-win-options="{placeholderText: 'Search',
-                 focusOnKeyboardInput: true,
+                 data-win-options="{placeholderText: '输入关键词搜索',
                  onquerysubmitted: SearchUtils.querySubmittedHandler }">
             </div>
         </header>
@@ -51,7 +50,7 @@
             <div class="groupeditemslist win-selectionstylefilled" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{
                     layout: {type: WinJS.UI.GridLayout, groupHeaderPosition: 'top'},
                     selectionMode: 'none',
-                    currentItem: {type: WinJS.UI.ObjectType.item, index: 0, hasFocus: true},
+                    currentItem: {type: WinJS.UI.ObjectType.item, index: 0, hasFocus: false},
                     groupDataSource: Data.groupsLess.dataSource,
                     groupHeaderTemplate: select('.headertemplate'),
                     itemDataSource: Data.itemsLess.dataSource,

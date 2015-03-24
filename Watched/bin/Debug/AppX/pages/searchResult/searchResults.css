@@ -1,5 +1,11 @@
 ﻿body {font-family: DengXian;}
 
+.searchBox {
+    -ms-grid-column: 4;
+    margin-top: 57px;
+    margin-right: 29px;
+}
+
 .searchResults header[role=banner] .titlearea {
     -ms-grid-columns: auto 20px 1fr 20px;
     display: -ms-grid;
@@ -24,6 +30,7 @@
 }
 
     .searchResults section[role=main] .resultsmessage {
+        font-family: DengXian;
         margin-left: 120px;
         margin-right: 120px;
         margin-top: 193px;
@@ -105,7 +112,6 @@
             }
 
                 .searchResults section[role=main] .resultslist .item .item-content .item-subtitle, .searchResults section[role=main] .resultslist .item .item-content .item-description {
-                    font-family: DengXian;
                     opacity: 0.6;
                 }
 

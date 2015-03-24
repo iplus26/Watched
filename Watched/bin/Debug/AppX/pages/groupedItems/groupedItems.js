@@ -5,14 +5,20 @@
     var ui = WinJS.UI;
 
     ui.Pages.define("/pages/groupedItems/groupedItems.html", {
-        // This function is called to initialize the page.
         init: function (element, options) {
             this.groupHeaderInvoked = ui.eventHandler(this._groupHeaderInvoked.bind(this));
             this.itemInvoked = ui.eventHandler(this._itemInvoked.bind(this));
+            
         },
 
         // This function is called whenever a user navigates to this page.
         ready: function (element, options) {
+            document.getElementById("searchBox").winControl.focusOnKeyboardInput = true;
+        },
+
+        unload: function () {
+            // Turn off type to search
+            document.getElementById("searchBox").winControl.focusOnKeyboardInput = false;
         },
 
         updateLayout: function (element) {

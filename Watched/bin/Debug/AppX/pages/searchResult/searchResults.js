@@ -16,18 +16,16 @@
             this.itemInvoked = ui.eventHandler(this._itemInvoked.bind(this));
         },
 
-        // This function is called whenever a user navigates to this page.
         ready: function (element, options) {
             var listView = element.querySelector(".resultslist").winControl;
             this._handleQuery(element, options);
-            listView.element.focus();
+            //listView.element.focus();
+            //document.getElementById("searchBox").winControl.focusOnKeyboardInput = true;
         },
 
-        // This function updates the page layout in response to layout changes.
-        updateLayout: function (element) {
-            /// <param name="element" domElement="true" />
-
-            // TODO: Respond to changes in layout.
+        unload: function () {
+            // Turn off type to search
+            //document.getElementById("searchBox").winControl.focusOnKeyboardInput = false;
         },
 
         // This function filters the search data using the specified filter.
@@ -53,53 +51,49 @@
         _generateFilters: function () {
             this._filters = [];
             this._filters.push({ results: null, text: "All", predicate: function (item) { return true; } });
-
-
-            // 之后更改这个代码可以实现显示 top 250 榜单里面的
+            // todo: 之后更改这个代码可以实现显示 top 250 榜单里面的
             //this._filters.push({ results: null, text: "Group 1", predicate: function (item) { return item.group.key === "group1"; } });
             //this._filters.push({ results: null, text: "Group 2+", predicate: function (item) { return item.group.key !== "group1"; } });
         },
 
-        // This function executes each step required to perform a search.
+        // 执行搜索
         _handleQuery: function (element, args) {
             var originalResults;
+
             this._lastSearch = args.queryText;
-            WinJS.Namespace.define("searchResults", { markText: WinJS.Binding.converter(this._markText.bind(this)) });
+
+            WinJS.Namespace.define("searchResults", {
+                markText: WinJS.Binding.converter(this._markText.bind(this))
+            });
+
             this._initializeLayout(element);
             this._generateFilters();
             originalResults = this._searchData(args.queryText);
             if (originalResults.length === 0) {
-                document.querySelector('.filterbar').style.display = "none";
+                document.querySelector('.filterbar').style.display = "none";    // 无结果，搜索结果设为none
             } else {
-                document.querySelector('.resultsmessage').style.display = "none";
+                document.querySelector('.resultsmessage').style.display = "none"; // 有结果，提示信息设为none
             }
             this._populateFilterBar(element, originalResults);
             this._applyFilter(this._filters[0], originalResults);
         },
 
+        // 初始化，显示header
         _initializeLayout: function (element) {
             element.querySelector(".titlearea .pagetitle").textContent = "看过 Watched";
             element.querySelector(".titlearea .pagesubtitle").innerHTML = "<i>" + this._lastSearch + '</i> 的搜索结果';
         },
 
+        // Navigate to the item that was invoked. => 导航到对应电影的页面 itemDetailPage.html
         _itemInvoked: function (args) {
             args.detail.itemPromise.done(function itemInvoked(item) {
-
-
                 var item = SearchResult.movies.getAt(args.detail.itemIndex);
                 WinJS.Navigation.navigate("/pages/itemDetail/itemDetail.html", { item: ["fromSearch", item.id] });
                 // item: [item.group.key, item.id]
-
-      
-
-
-                // TODO: Navigate to the item that was invoked.
-                // 导航到对应电影的页面 itemDetailPage.html
             });
         },
 
-        // This function colors the search term. Referenced in /pages/searchResult/searchResults.html
-        // as part of the ListView item templates.
+        // 标蓝搜索关键词
         _markText: function (text) {
             return text.replace(this._lastSearch, "<mark>" + this._lastSearch + "</mark>");
         },
@@ -141,11 +135,10 @@
         // This function populates a WinJS.Binding.List with search results for the
         // provided query.
         _searchData: function (queryText) {
-
             var movies;
             movies = Data.getMovies("/v2/movie/search?q=" + encodeURI(queryText));
             for (var i = 0; i < movies.length; i++) {
-                movies[i].backgroundImage = movies[i].images.medium;
+                movies[i] = Data.getMoreInfo(movies[i], 0);
             }
             var movieResults = new WinJS.Binding.List(movies);
 
@@ -154,7 +147,6 @@
             })
 
             return movieResults;
-
         }
     });
 })();
