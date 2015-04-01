@@ -2,6 +2,7 @@
 
 {
     "brief": "简介",
-	"summary": "梗概",
-	"casts": "角儿"
+	"more": "详情",
+	"casts": "角儿",
+	"image": "海报"
 }

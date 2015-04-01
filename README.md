@@ -5,11 +5,6 @@
 ![Imgur](http://i.imgur.com/EjqRgdF.jpg)
 
 # todo
-* more in resultSearch Page...
-* more in itemDetail Page...if Douban allows.
-	* 如果获取的海报是“偏高”的，那么在 section3 中可能显示并不很美观
-	* 更多的功能，比如海报、预告片、在线观看等等
-* icon and launch picture. (韩)
 * Charms Bar Share based on screen shot of the movie item detail page. [Document](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.showshareui.aspx)
 * 影人页面
 * 剧集页面（剧集使用 Trakt.tv 的 API 获取剧集更新，监测 kickass 的资源更新，在线播放等）
@@ -17,6 +12,32 @@
 * *豆瓣在新版 API 中去掉了收藏电影的接口，科科*
 
 # update
+2015.04.01
+
+* 可以用鼠标点击搜索框了，之前原来是搜索框被别的组件挡住了，用 `z-index: 999;` 解决了
+* 在搜索结果页面增加搜索框
+* itemDetail Page
+	* 增加 IMDb 评分、烂番茄评分、Metascore 分数
+	
+2015.03.31
+
+* itemDetail Page
+	* 在海报全部加载完成之前判断海报的宽和高，便于显示合适的小图
+		* [JS快速获取图片宽高的方法 - 琼台博客](http://www.qttc.net/201304304.html)
+	* 只显示有限的内容梗概
+		* JavaScript 的 `substring()` 方法在 UTF-8 下竟然是自动识别中英文的？
+		
+2015.03.28
+
+* itemDetail Page 
+	* 增加在线观看和下载链接
+* 豆瓣口碑榜可以实时更新了
+	
+2015.03.26
+
+* icon & launch image ([@小虚大魔王](https://github.com/thehackercat))
+* 上架 Windows Store
+
 2015.03.24
 
 * searchResult Page

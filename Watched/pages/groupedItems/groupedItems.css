@@ -4,6 +4,7 @@
     -ms-grid-column: 4;
     margin-top: 57px;
     margin-right: 29px;
+    z-index: 9999;
 }
 
 .win-searchbox-input {
@@ -21,6 +22,7 @@
     width: 100%;
     z-index: 0;
 }
+
 
     /* This selector is used to prevent ui-dark/light.css from overwriting changes
        to .win-surface. */
@@ -71,7 +73,7 @@
 
             .groupeditemspage .groupeditemslist .group-header .group-chevron::before {
                 content: "\E26B";
-                font-family: 'Segoe UI Symbol';
+                font-family: "Segoe UI Symbol";
             }
 
             .groupeditemspage .groupeditemslist .group-header .group-chevron:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::before {
@@ -82,8 +84,8 @@
         -ms-grid-columns: 1fr;
         -ms-grid-rows: 1fr 90px;
         display: -ms-grid;
-        height: 600px;
-        width: 420px;
+        height: 66vh;
+        width: 46.2vh;
     }
 
         .groupeditemspage .groupeditemslist .item .item-image {

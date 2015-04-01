@@ -1,0 +1,13 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-140"
+"ResourceDimensions"		"scale-140"
+
+[Files]
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\split.scale-140.pri"			"resources.pri"
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\PackageLayout\images\Wide310x150Logo.scale-140.png"			"images\Wide310x150Logo.scale-140.png"
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\PackageLayout\images\storelogo.scale-140.png"			"images\storelogo.scale-140.png"
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\PackageLayout\images\Square70x70Logo.scale-140.png"			"images\Square70x70Logo.scale-140.png"
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\PackageLayout\images\Square310x310Logo.scale-140.png"			"images\Square310x310Logo.scale-140.png"
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\PackageLayout\images\Square150x150Logo.scale-140.png"			"images\Square150x150Logo.scale-140.png"
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\PackageLayout\images\splashscreen.scale-140.png"			"images\splashscreen.scale-140.png"
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\PackageLayout\images\SmallLogo.scale-140.png"			"images\SmallLogo.scale-140.png"

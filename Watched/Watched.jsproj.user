@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ReferenceCachePath>C:\Users\Ivan\AppData\Local\Temp\pntenimd_Watched_refcache</ReferenceCachePath>
     <AppxPackageIsForStore>False</AppxPackageIsForStore>
-    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxShowAllApps>True</AppxShowAllApps>
     <AppxBuildConfigurationSelection>neutral</AppxBuildConfigurationSelection>
   </PropertyGroup>
 </Project>

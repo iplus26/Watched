@@ -116,6 +116,7 @@
             var movie = new Movie();
             movie.bind("info", accessInfo);
 
+
             function accessInfo() {
                 // movieItem = Data.getMovie(movieItem.id);
                 // 以下的这一块hack是因为豆瓣并没有向普通权限（就是我们）开放海报API
@@ -128,6 +129,7 @@
                 if (img) {
                    var posterUrl = img.src.replace(/thumb/, "raw");
                 }
+
                 //如果这部电影没有图片 会出错 try catch
                 document.getElementById("hubhero").style.backgroundImage = "url(" + posterUrl + ")";
 
@@ -156,22 +158,18 @@
                 title.appendChild(original_title_span);
                 fragment1.appendChild(title);
 
-                var douban_rating_str = '(' + function () {
-                    var rate = movieItem.rating.average;
-                    var votes = movieItem.ratings_count;
-                    
+                var douban_rating_str = generate_rating_str (movieItem.rating.average, movieItem.ratings_count) ;
+
+                function generate_rating_str(rate, votes) {
                     if (rate == 0) {
-                        return '无人评分';
+                        return '(无人评分)';
                     } else if (votes > 10000) {
-                        return (votes / 10000).toFixed(1) + '万人评分';
+                        return '(' + (votes / 10000).toFixed(1) + '万人评分)';
                     } else {
-                        return votes + '人评分';
+                        return '(' + votes + '人评分)';
                     }
+                }
 
-                }() + ')';
-
-                    //(movieItem.rating.average == 0) ? '无人评分' : ('(' + (movieItem.ratings_count >= 10000 ? ((movieItem.ratings_count / 10000).toFixed(1) + "万") : movieItem.ratings_count) + "人评分)");
-                
                 var douban_rate_span = document.createElement("span");
                 douban_rate_span.textContent = movieItem.rating.average.toFixed(1);
                 douban_rate_span.style.fontSize = "2em";
@@ -191,22 +189,167 @@
                 var genres = document.createElement("p");
                 genres.innerText = movieItem.genres.join(" / ");
                 fragment1.appendChild(genres);
-
-                
-                var countries = document.createElement("p");
-                countries.innerText = movieItem.countries.join(" / ");
-                fragment1.appendChild(countries);
                 
                 var douban_link = document.createElement("a");
-                douban_link.href = "http://movie.douban.com/subject/" + movieItem.id + "/photos";
+                douban_link.href = "http://movie.douban.com/subject/" + movieItem.id + "/";
                 douban_link.textContent = "数据来自豆瓣"
                 fragment1.appendChild(douban_link);
 
                 section1.appendChild(fragment1);
+                /* ---------------- section1 over ---------------- */
 
-                var description = document.getElementById("description");
-                description.innerHTML = movieItem.summary.replace(/\n/, "</p><p>") + "</p>";
-                description.nextElementSibling.src = posterUrl;
+                /* ---------------- more info section, known as section3 ---------------- */
+                var fragment2 = document.createDocumentFragment();
+
+                var tags = document.createElement("p");
+                tags.innerText = movieItem.countries.join(" / ");
+                tags.innerText += " / ";
+                tags.innerText += movieItem.genres.join(" / ");
+                fragment2.appendChild(tags);
+                
+                // --- 评分 table
+                
+                var rate_table = document.createElement("table");
+                rate_table.appendChild(generate_row(movieItem.alt, movieItem.rating.average, movieItem.ratings_count));
+
+                var imdb_toggle = document.createElement("div");
+                imdb_toggle.id = "imdbToggle";
+                var imdbToggle = function () {
+                    var toggle_control = document.getElementById("imdbToggle").winControl;
+                    if (toggle_control.checked) {
+                        // true => 显示
+                        var imdb_xhr = new XMLHttpRequest();
+                        var requestUrl = "http://www.omdbapi.com/?t=" + encodeURI(movieItem.original_title) + "&y=" + encodeURI(movieItem.year) + "&plot=short&r=json&tomatoes=true";
+                        imdb_xhr.open("get", requestUrl, false);
+                        imdb_xhr.send(null);
+                        var imdbItem = JSON.parse(imdb_xhr.responseText);
+                        if (typeof imdbItem.imdbVotes === 'undefined') {
+
+                        } else {
+                            imdbItem.imdbVotes = parseInt(imdbItem.imdbVotes.replace(",",""));
+                            imdbItem.imdbRating = parseFloat(imdbItem.imdbRating);
+                            var imdb_row = generate_row("http://imdb.com/title/" + imdbItem.imdbID, imdbItem.imdbRating, imdbItem.imdbVotes);
+                            rate_table.appendChild(imdb_row);
+                        }
+                        
+                        if (typeof imdbItem.tomatoMeter === "undefined") {
+
+                        } else {
+                            var tomato = document.createElement("th");
+                            tomato.setAttribute("colspan", "2");
+                            tomato.style.fontSize = "2em"
+                            if (imdbItem.tomatoImage == "fresh" || imdbItem.tomatoImage == "certified") {
+                                tomato.innerHTML = "<span>" +
+                                    imdbItem.tomatoMeter + "% <img width='25' src='/images/tomato-fresh.png' /></span>";
+                            } else {
+                                tomato.innerHTML = "<span>" +
+                                    imdbItem.tomatoMeter + "% <img width='25' src='/images/tomato-rotten.png' /></span>";
+                            }
+                            rate_table.appendChild(tomato);
+                        }
+
+                        if (typeof imdbItem.Metascore === "undefined") {
+
+                        } else {
+                            if(imdbItem.Metascore.toLowerCase() != "n/a"){
+                                var metascore = document.createElement("td");
+                                var div = document.createElement("div");
+                                div.width = div.offsetHeight;
+                                div.className = "metascore";
+                                div.textContent = " " + imdbItem.Metascore + " ";
+                                metascore.appendChild(div);
+                                rate_table.appendChild(metascore);
+                            }
+                        }
+                    } else {
+                        // false => 不显示
+                        while(rate_table.childNodes.length > 1){
+                            rate_table.removeChild(rate_table.lastChild);
+                        }
+                    }
+                }
+
+                function generate_row(website, rate, count) {
+                    var rate_span = document.createElement("span");
+                    rate_span.textContent = rate.toFixed(1);
+                    rate_span.style.fontSize = "2em";
+                    var ratings_count = document.createElement("span");
+                    var rating_str = generate_rating_str(rate, count);
+                    ratings_count.textContent = rating_str;
+                    var rate_control = document.createElement("div");
+                    rate_control.className = "win-small";
+                    var RateControl = new WinJS.UI.Rating(rate_control, { averageRating: rate / 2, maxRating: 5, disabled: true });
+                    
+                    var row1 = document.createElement("tr");
+                    var r1cell1 = document.createElement("td");    
+                    r1cell1.appendChild(rate_span);
+                    row1.appendChild(r1cell1);
+                    var r1cell2 = document.createElement("td");
+                    if (website.indexOf("douban") != -1) {
+                        website = "<a href='" + website + "'>douban</a>";
+                    } else {
+                        website = "<a href='" + website + "'>imdb</a>";
+                    }
+                    r1cell2.innerHTML = '/10 ' + rating_str + "<sup>" + website + "</sup>";
+                    row1.appendChild(r1cell2);
+                    var r1cell3 = document.createElement("td");
+                    r1cell3.appendChild(rate_control);
+                    row1.appendChild(r1cell3);
+                    return row1;
+                }
+                
+                var toggle = new WinJS.UI.ToggleSwitch(imdb_toggle, { checked: false, onchange: imdbToggle, labelOn: "显示更多评分", labelOff: "显示更多评分" });
+                
+
+
+                fragment2.appendChild(rate_table);
+                fragment2.appendChild(imdb_toggle);
+
+                /* rotten tomatoes part
+                
+                */
+
+                // --- 评分 table 完
+
+                var links = document.createElement("p");
+                links.innerHTML = "<a href='http://www.bilibili.com/search?keyword=" + encodeURI(movieItem.title) + "'><span style='font-family:\"Segoe UI Symbol\"'>&#xe173;</span>在线观看</a>";
+                links.innerHTML += " / <a href='https://www.baidu.com/s?wd=" + encodeURI(movieItem.title + " HR-HDTV") + "'>下载字幕版</a>";
+                links.innerHTML += " / <a href='https://kickass.to/usearch/" + encodeURI(movieItem.original_title.replace("'"," ")) + "'>下载高清生肉</a>";
+                fragment2.appendChild(links);
+
+                var description = document.createElement("p");
+                description.innerHTML = "<br>剧情简介 <span style='font-family:\"Segoe UI Symbol\"'>&#xe011;</span>";
+                description.innerHTML += "<p>" + function () {
+                    if (movieItem.summary.replace(/\n/, "</p><p>").length > 300) {
+                        return movieItem.summary.replace(/\n/, "</p><p>").substring(0, 300) + "<a href='http://movie.douban.com/subject/" + movieItem.id + "/'><span style='font-family:\"Segoe UI Symbol\"'>&#xe10C;</span>豆瓣</a>"
+                    } else return movieItem.summary.replace(/\n/, "</p><p>");
+                }() + "</p>";
+                fragment2.appendChild(description);
+                
+                var section3 = document.getElementById("section3");
+                section3.appendChild(fragment2);
+                /* ---------------- section3 over ---------------- */
+
+                
+                var imageRecommand = document.getElementById("image-recommand");
+                imageRecommand.src = posterUrl;
+              //  imageRecommand.onerror="document.getElementById('hubhero').style.backgroundImage = 'url(http://www.tbwaengage.com/wp-content/uploads/2013/08/Star-Wars-404-.jpg)';this.src = 'http://www.tbwaengage.com/wp-content/uploads/2013/08/Star-Wars-404-.jpg';"
+
+
+                // 感觉还是有一点bug，有时候会显示错误图片，然后加载出来全部图片之后就不管大小了，明天再说！晚安！
+                var check = function () {
+                    if (imageRecommand.width > 50) {
+                        if (imageRecommand.width > imageRecommand.height) {
+                            imageRecommand.width = 420;
+                        } else {
+                            imageRecommand.height = document.documentElement.clientHeight * 0.5;
+                        }
+                        clearInterval(set);
+                    }
+                }
+
+                var set = setInterval(check, 40);
+
             }
             movie.start();
         },

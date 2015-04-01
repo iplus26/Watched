@@ -2,6 +2,19 @@
     font-family: DengXian;
 }
 
+th, td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.metascore {
+    background-color: white;
+    color: black;
+    font-size: 2em;
+    width: 1.5em;
+    text-align:center;
+}
+
 .hubpage header[role=banner] {
     position: relative;
     z-index: 2;
@@ -103,6 +116,11 @@
         margin-left: 0px;
     }
 
+
+.hubpage .hub .section4 {
+    width: 420px;
+    max-height: 100px;
+}
 
 .hubpage .hub .section3 {
     width: 420px;

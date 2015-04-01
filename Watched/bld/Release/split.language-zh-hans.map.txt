@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-zh-hans"
+"ResourceDimensions"		"language-zh-cn"
+
+[Files]
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\split.language-zh-hans.pri"			"resources.pri"

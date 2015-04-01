@@ -1,5 +1,7 @@
 bld\Debug\split.pri
 bld\Debug\split.map.txt
+bld\Debug\split.language-zh-hans.pri
+bld\Debug\split.language-zh-hans.map.txt
 bld\Debug\split.scale-140.pri
 bld\Debug\split.scale-140.map.txt
 bld\Debug\split.scale-180.pri

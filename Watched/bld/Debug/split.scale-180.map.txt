@@ -8,5 +8,5 @@
 "C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\PackageLayout\images\storelogo.scale-180.png"			"images\storelogo.scale-180.png"
 "C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\PackageLayout\images\Square70x70Logo.scale-180.png"			"images\Square70x70Logo.scale-180.png"
 "C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\PackageLayout\images\Square310x310Logo.scale-180.png"			"images\Square310x310Logo.scale-180.png"
-"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\PackageLayout\images\Square150x150Logo.scale-180.png"			"images\Square150x150Logo.scale-180.png"
-"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\PackageLayout\images\BadgeLogo.scale-180.png"			"images\BadgeLogo.scale-180.png"
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\PackageLayout\images\splashscreen.scale-180.png"			"images\splashscreen.scale-180.png"
+"C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\PackageLayout\images\SmallLogo.scale-180.png"			"images\SmallLogo.scale-180.png"
