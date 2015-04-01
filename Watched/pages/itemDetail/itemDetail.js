@@ -190,10 +190,24 @@
                 genres.innerText = movieItem.genres.join(" / ");
                 fragment1.appendChild(genres);
                 
+                
+                var links = document.createElement("p");
                 var douban_link = document.createElement("a");
                 douban_link.href = "http://movie.douban.com/subject/" + movieItem.id + "/";
                 douban_link.textContent = "数据来自豆瓣"
-                fragment1.appendChild(douban_link);
+                links.appendChild(douban_link);
+                links.innerHTML += " / ";
+                var share = document.createElement("a");
+                share.addEventListener("click", function () {
+                    Windows.ApplicationModel.DataTransfer.DataTransferManager.showShareUI();
+                });
+		share.textContent="分享";
+                links.appendChild(share);
+
+                fragment1.appendChild(links);
+                
+
+
 
                 section1.appendChild(fragment1);
                 /* ---------------- section1 over ---------------- */
@@ -252,6 +266,7 @@
 
                         } else {
                             if(imdbItem.Metascore.toLowerCase() != "n/a"){
+                                
                                 var metascore = document.createElement("td");
                                 var div = document.createElement("div");
                                 div.width = div.offsetHeight;
