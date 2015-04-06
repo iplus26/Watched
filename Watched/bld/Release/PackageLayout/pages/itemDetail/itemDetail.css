@@ -2,6 +2,23 @@
     font-family: DengXian;
 }
 
+th, td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.symbol {
+    font-family: "Segoe UI Symbol";
+}
+
+.metascore {
+    background-color: white;
+    color: black;
+    font-size: 2em;
+    width: 1.5em;
+    text-align:center;
+}
+
 .hubpage header[role=banner] {
     position: relative;
     z-index: 2;

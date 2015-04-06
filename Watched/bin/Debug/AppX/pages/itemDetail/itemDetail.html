@@ -42,10 +42,13 @@
                         <div class="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
                             <div class="smallListIconTextItem">
                                 <img src="#" class="smallListIconTextItem-Image" data-win-bind="src: picture" />
-                                <div class="smallListIconTextItem-Detail">
-                                    <h4 data-win-bind="textContent: name"></h4>
-                                    <h6 data-win-bind="textContent: job"></h6>
-                                </div>
+                                <a class="nocolor" data-win-bind="href: alt">
+                                    <div class="smallListIconTextItem-Detail">
+                                        <h4 data-win-bind="textContent: name"></h4>
+                                        <h6 data-win-bind="textContent: job"></h6>
+
+                                    </div>
+                                </a>
                             </div>
                         </div>
 

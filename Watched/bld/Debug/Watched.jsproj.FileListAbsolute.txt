@@ -13,3 +13,18 @@ C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\qualifiers.t
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\ProjectArchitectures.txt
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\resources.pri
+\\psf\Home\Documents\Dev\Watched\Watched\bin\Debug\ReverseMap\resources.pri
+\\psf\Home\Documents\Dev\Watched\Watched\bin\Debug\AppxManifest.xml
+\\psf\Home\Documents\Dev\Watched\Watched\bin\Debug\Watched.build.appxrecipe
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\priconfig.xml
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\priconfig.xml.intermediate
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\layout.resfiles
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\layout.resfiles.intermediate
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\resources.resfiles
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\resources.resfiles.intermediate
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\pri.resfiles
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\pri.resfiles.intermediate
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\qualifiers.txt
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\qualifiers.txt.intermediate
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\ProjectArchitectures.txt

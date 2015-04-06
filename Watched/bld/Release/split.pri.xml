@@ -29,9 +29,29 @@
 						<Value>images\celebrity-default-medium.gif</Value>
 					</Candidate>
 				</NamedResource>
+				<NamedResource name="douban.png" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/douban.png">
+					<Candidate type="Path">
+						<Value>images\douban.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="groupImage.png" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/groupImage.png">
+					<Candidate type="Path">
+						<Value>images\groupImage.png</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="HarryPotterCollection.jpg" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/HarryPotterCollection.jpg">
 					<Candidate type="Path">
 						<Value>images\HarryPotterCollection.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Imdb.png" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/Imdb.png">
+					<Candidate type="Path">
+						<Value>images\Imdb.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="poster_error.jpg" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/poster_error.jpg">
+					<Candidate type="Path">
+						<Value>images\poster_error.jpg</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="SmallLogo.png" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/SmallLogo.png">
@@ -80,6 +100,16 @@
 				<NamedResource name="storelogo.png" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/storelogo.png">
 					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
 						<Value>images\storelogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="tomato-fresh.png" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/tomato-fresh.png">
+					<Candidate type="Path">
+						<Value>images\tomato-fresh.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="tomato-rotten.png" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/tomato-rotten.png">
+					<Candidate type="Path">
+						<Value>images\tomato-rotten.png</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/Wide310x150Logo.png">

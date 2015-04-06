@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>IE11WIN8_1</Machine>
+    <WindowsUser>IEUser</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>19665iPlus26.36638B5798A12</PackageIdentityName>
+    <IntermediateOutputPath>\\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>0D88A54E0AADAC4D2E5B169C84BEA13AEC21A8CD992786596A759F034A7E61DF</RegisteredManifestChecksum>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="\\psf\Home\Documents\Dev\Watched\Watched\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-04-05T03:54:26.000</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2015-03-24T00:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\itemDetail\itemDetail.css">
+      <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
+      <Modified>2015-04-03T02:59:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\groupDetail\groupDetail.css">
+      <PackagePath>pages\groupDetail\groupDetail.css</PackagePath>
+      <Modified>2015-03-25T13:16:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\groupedItems\groupedItems.css">
+      <PackagePath>pages\groupedItems\groupedItems.css</PackagePath>
+      <Modified>2015-04-01T09:32:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\searchResult\searchResults.css">
+      <PackagePath>pages\searchResult\searchResults.css</PackagePath>
+      <Modified>2015-04-01T09:32:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\BadgeLogo.scale-100.png">
+      <PackagePath>images\BadgeLogo.scale-100.png</PackagePath>
+      <Modified>2015-03-25T09:49:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\douban.png">
+      <PackagePath>images\douban.png</PackagePath>
+      <Modified>2015-04-01T13:26:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\groupImage.png">
+      <PackagePath>images\groupImage.png</PackagePath>
+      <Modified>2015-04-01T17:44:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Imdb.png">
+      <PackagePath>images\Imdb.png</PackagePath>
+      <Modified>2015-04-01T13:17:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\SmallLogo.scale-100.png">
+      <PackagePath>images\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\SmallLogo.scale-140.png">
+      <PackagePath>images\SmallLogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\SmallLogo.scale-180.png">
+      <PackagePath>images\SmallLogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\SmallLogo.scale-80.png">
+      <PackagePath>images\SmallLogo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\SmallLogo.targetsize-16.png">
+      <PackagePath>images\SmallLogo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\SmallLogo.targetsize-256.png">
+      <PackagePath>images\SmallLogo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\SmallLogo.targetsize-32.png">
+      <PackagePath>images\SmallLogo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\SmallLogo.targetsize-48.png">
+      <PackagePath>images\SmallLogo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:48:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\splashscreen.scale-140.png">
+      <PackagePath>images\splashscreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:48:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\splashscreen.scale-180.png">
+      <PackagePath>images\splashscreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:48:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T05:36:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Square150x150Logo.scale-140.png">
+      <PackagePath>images\Square150x150Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T05:36:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Square150x150Logo.scale-80.png">
+      <PackagePath>images\Square150x150Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T05:37:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Square310x310Logo.scale-140.png">
+      <PackagePath>images\Square310x310Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:48:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Square310x310Logo.scale-180.png">
+      <PackagePath>images\Square310x310Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:48:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Square310x310Logo.scale-80.png">
+      <PackagePath>images\Square310x310Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Square70x70Logo.scale-140.png">
+      <PackagePath>images\Square70x70Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Square70x70Logo.scale-180.png">
+      <PackagePath>images\Square70x70Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\storelogo.scale-140.png">
+      <PackagePath>images\storelogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\storelogo.scale-180.png">
+      <PackagePath>images\storelogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\tomato-fresh.png">
+      <PackagePath>images\tomato-fresh.png</PackagePath>
+      <Modified>2015-04-01T09:05:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\tomato-rotten.png">
+      <PackagePath>images\tomato-rotten.png</PackagePath>
+      <Modified>2015-04-01T09:11:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Wide310x150Logo.scale-140.png">
+      <PackagePath>images\Wide310x150Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Wide310x150Logo.scale-180.png">
+      <PackagePath>images\Wide310x150Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:48:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\Wide310x150Logo.scale-80.png">
+      <PackagePath>images\Wide310x150Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T09:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\celebrity-default-medium.gif">
+      <PackagePath>images\celebrity-default-medium.gif</PackagePath>
+      <Modified>2015-03-24T00:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\HarryPotterCollection.jpg">
+      <PackagePath>images\HarryPotterCollection.jpg</PackagePath>
+      <Modified>2015-03-25T12:44:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\images\poster_error.jpg">
+      <PackagePath>images\poster_error.jpg</PackagePath>
+      <Modified>2015-04-02T12:41:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\js\data.js">
+      <PackagePath>js\data.js</PackagePath>
+      <Modified>2015-04-03T09:38:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2015-03-24T00:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2015-03-24T00:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\itemDetail\itemDetail.js">
+      <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
+      <Modified>2015-04-05T03:54:25.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\groupDetail\groupDetail.js">
+      <PackagePath>pages\groupDetail\groupDetail.js</PackagePath>
+      <Modified>2015-03-24T00:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\groupedItems\groupedItems.js">
+      <PackagePath>pages\groupedItems\groupedItems.js</PackagePath>
+      <Modified>2015-03-24T00:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\searchResult\searchResults.js">
+      <PackagePath>pages\searchResult\searchResults.js</PackagePath>
+      <Modified>2015-04-01T09:43:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\itemDetail\itemDetail.html">
+      <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
+      <Modified>2015-04-03T03:40:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\groupDetail\groupDetail.html">
+      <PackagePath>pages\groupDetail\groupDetail.html</PackagePath>
+      <Modified>2015-03-24T00:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\groupedItems\groupedItems.html">
+      <PackagePath>pages\groupedItems\groupedItems.html</PackagePath>
+      <Modified>2015-03-24T00:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2015-03-24T00:13:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\pages\searchResult\searchResults.html">
+      <PackagePath>pages\searchResult\searchResults.html</PackagePath>
+      <Modified>2015-04-01T16:50:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\Home\Documents\Dev\Watched\Watched\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-04-05T03:54:24.000</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

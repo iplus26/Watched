@@ -5,13 +5,21 @@
 ![Imgur](http://i.imgur.com/EjqRgdF.jpg)
 
 # todo
-* Charms Bar Share based on screen shot of the movie item detail page. [Document](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.showshareui.aspx)
 * 影人页面
 * 剧集页面（剧集使用 Trakt.tv 的 API 获取剧集更新，监测 kickass 的资源更新，在线播放等）
 * 「看过」的更多功能
 * *豆瓣在新版 API 中去掉了收藏电影的接口，科科*
 
 # update
+2015.04.03
+
+* 点击导演 & 演员会跳转到豆瓣页面或是 IMDb 搜索冷门者，作为还没做出来影人页面的临时替代
+
+2015.04.02
+
+* Charms Bar Share based on screenshot of the movie item detail page. 
+	* [Document: DataTransferManager.ShowShareUI | showShareUI method](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.showshareui.aspx)
+
 2015.04.01
 
 * 可以用鼠标点击搜索框了，之前原来是搜索框被别的组件挡住了，用 `z-index: 999;` 解决了

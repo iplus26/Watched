@@ -86,7 +86,7 @@
             
       //  try {
             var xhr = new XMLHttpRequest();
-            var requestUrl = "http://2.watched.sinaapp.com/movie_weekly.php";
+            var requestUrl = "http://2.watched.sinaapp.com/mv_weekly_test.php";
             xhr.open("get", requestUrl, false);
             xhr.send(null);
 
@@ -123,7 +123,7 @@
         var lightGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY7h4+cp/AAhpA3h+ANDKAAAAAElFTkSuQmCC";
         var mediumGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY5g8dcZ/AAY/AsAlWFQ+AAAAAElFTkSuQmCC";
 
-        var groupImage = "http://t.douban.com/img/biz/poster-1357728694.jpg";
+        var groupImage = "/images/groupImage.png";
 
         var movieGroups = [
             {

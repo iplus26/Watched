@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="19665iPlus26.36638B5798A12" Version="1.1.0.1" Publisher="CN=E0297A29-707B-43A3-AC81-94DECC607B89" />
+  <Identity Name="19665iPlus26.36638B5798A12" Version="1.1.0.4" Publisher="CN=E0297A29-707B-43A3-AC81-94DECC607B89" />
   <Properties>
     <DisplayName>看过</DisplayName>
     <PublisherDisplayName>iPlus26</PublisherDisplayName>

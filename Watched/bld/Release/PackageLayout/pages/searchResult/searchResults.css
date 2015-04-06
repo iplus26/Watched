@@ -4,6 +4,7 @@
     -ms-grid-column: 4;
     margin-top: 57px;
     margin-right: 29px;
+    z-index: 1026;
 }
 
 .searchResults header[role=banner] .titlearea {

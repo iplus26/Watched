@@ -4,6 +4,7 @@
     -ms-grid-column: 4;
     margin-top: 57px;
     margin-right: 29px;
+    z-index: 9999;
 }
 
 .win-searchbox-input {
@@ -21,6 +22,7 @@
     width: 100%;
     z-index: 0;
 }
+
 
     /* This selector is used to prevent ui-dark/light.css from overwriting changes
        to .win-surface. */

@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="19665iPlus26.36638B5798A12" Version="1.1.0.0" Publisher="CN=E0297A29-707B-43A3-AC81-94DECC607B89" ProcessorArchitecture="neutral" />
+  <Identity Name="19665iPlus26.36638B5798A12" Version="1.1.0.4" Publisher="CN=E0297A29-707B-43A3-AC81-94DECC607B89" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>看过</DisplayName>
     <PublisherDisplayName>iPlus26</PublisherDisplayName>

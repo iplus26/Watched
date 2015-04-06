@@ -1,4 +1,4 @@
-MainPackage=C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\Watched_1.1.0.1_Bundle\Watched_1.1.0.1_AnyCPU_Debug.appx
-ResourcePack=C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\Watched_1.1.0.1_Bundle\Watched_1.1.0.1_language-zh-hans.appx
-ResourcePack=C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\Watched_1.1.0.1_Bundle\Watched_1.1.0.1_scale-140.appx
-ResourcePack=C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\Watched_1.1.0.1_Bundle\Watched_1.1.0.1_scale-180.appx
+MainPackage=C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Release\Watched_1.1.0.4_Bundle\Watched_1.1.0.4_AnyCPU.appx
+ResourcePack=C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Release\Watched_1.1.0.4_Bundle\Watched_1.1.0.4_language-zh-hans.appx
+ResourcePack=C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Release\Watched_1.1.0.4_Bundle\Watched_1.1.0.4_scale-140.appx
+ResourcePack=C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Release\Watched_1.1.0.4_Bundle\Watched_1.1.0.4_scale-180.appx

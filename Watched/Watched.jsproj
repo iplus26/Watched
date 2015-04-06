@@ -63,8 +63,10 @@
     <Content Include="images\BadgeLogo.scale-100.png" />
     <Content Include="images\celebrity-default-medium.gif" />
     <Content Include="images\douban.png" />
+    <Content Include="images\groupImage.png" />
     <Content Include="images\HarryPotterCollection.jpg" />
     <Content Include="images\Imdb.png" />
+    <Content Include="images\poster_error.jpg" />
     <Content Include="images\SmallLogo.scale-100.png" />
     <Content Include="images\SmallLogo.scale-140.png" />
     <Content Include="images\SmallLogo.scale-180.png" />
