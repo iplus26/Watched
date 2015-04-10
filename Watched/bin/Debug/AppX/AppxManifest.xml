@@ -7,7 +7,7 @@
 
     有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="19665iPlus26.36638B5798A12" Version="1.1.0.4" Publisher="CN=E0297A29-707B-43A3-AC81-94DECC607B89" ProcessorArchitecture="neutral" />
+  <Identity Name="19665iPlus26.36638B5798A12" Version="1.1.0.6" Publisher="CN=E0297A29-707B-43A3-AC81-94DECC607B89" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>看过</DisplayName>
     <PublisherDisplayName>iPlus26</PublisherDisplayName>
@@ -18,12 +18,11 @@
     <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
   </Prerequisites>
   <Resources>
-    <Resource Language="EN-US" />
     <Resource Language="ZH-CN" />
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="看过 Watched" Description="Watched" ForegroundText="light" BackgroundColor="#4B91F5" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\SmallLogo.png" ToastCapable="true">
+      <m2:VisualElements DisplayName="看过 Watched" Description="看过是 Windows 8.1 平台的第三方豆瓣电影客户端" ForegroundText="light" BackgroundColor="#4B91F5" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\SmallLogo.png" ToastCapable="true">
         <m2:DefaultTile ShortName="Watched" Square310x310Logo="images\Square310x310Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" Square70x70Logo="images\Square70x70Logo.png" DefaultSize="wide310x150Logo">
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />

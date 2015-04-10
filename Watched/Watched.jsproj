@@ -48,12 +48,13 @@
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <RequiredPlatformVersion>8.1</RequiredPlatformVersion>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
-    <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>Watched_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
     <PackageCertificateThumbprint>E1CCB1C7C9FC541143FD383262F065B19780DF2B</PackageCertificateThumbprint>
     <AppxBundle>Always</AppxBundle>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <AppxPackageDir>\\psf\Home\Desktop\</AppxPackageDir>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -61,6 +62,7 @@
     </AppxManifest>
     <Content Include="css\default.css" />
     <Content Include="images\BadgeLogo.scale-100.png" />
+    <Content Include="images\bjiff.jpg" />
     <Content Include="images\celebrity-default-medium.gif" />
     <Content Include="images\douban.png" />
     <Content Include="images\groupImage.png" />

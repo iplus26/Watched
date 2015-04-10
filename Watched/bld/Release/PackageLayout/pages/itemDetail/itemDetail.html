@@ -42,10 +42,13 @@
                         <div class="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
                             <div class="smallListIconTextItem">
                                 <img src="#" class="smallListIconTextItem-Image" data-win-bind="src: picture" />
-                                <div class="smallListIconTextItem-Detail">
-                                    <h4 data-win-bind="textContent: name"></h4>
-                                    <h6 data-win-bind="textContent: job"></h6>
-                                </div>
+                                <a class="nocolor" data-win-bind="href: alt">
+                                    <div class="smallListIconTextItem-Detail">
+                                        <h4 data-win-bind="textContent: name"></h4>
+                                        <h6 data-win-bind="textContent: job"></h6>
+
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
@@ -74,7 +77,7 @@
 					
                 <div class="section4" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'image'}}"><div id="section4">
 						<img id="image-recommand" />
-						<p><span style='font-family:"Segoe UI Symbol"'>&#xe209;</span> 这是本片被推荐最多的海报</p>
+						<p><span style='font-family:"Segoe UI Symbol"'>&#xe209;</span> 这是本片被推荐最多的剧照</p>
                     </div>
                 </div>
 				

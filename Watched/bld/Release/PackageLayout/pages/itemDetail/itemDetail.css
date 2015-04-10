@@ -1,4 +1,4 @@
-﻿body {
+﻿body, p, div {
     font-family: DengXian;
 }
 
@@ -10,6 +10,23 @@ th, td {
 .symbol {
     font-family: "Segoe UI Symbol";
 }
+
+.nocolor {
+    color: white;
+}
+
+    .nocolor:hover {
+        color: white;
+    }
+    .nocolor:visited {
+        color: white;
+    }
+    .nocolor:link {
+        color: white;
+    }
+    .nocolor:active {
+        color: white;
+    }
 
 .metascore {
     background-color: white;

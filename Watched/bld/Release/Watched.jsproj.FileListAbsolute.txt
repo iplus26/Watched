@@ -13,3 +13,18 @@ C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\qualifiers
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\qualifiers.txt.intermediate
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bld\Release\ProjectArchitectures.txt
+C:\Watched\Watched\bin\Release\resources.pri
+C:\Watched\Watched\bin\Release\AppxManifest.xml
+C:\Watched\Watched\bin\Release\Watched.build.appxrecipe
+C:\Watched\Watched\bld\Release\priconfig.xml
+C:\Watched\Watched\bld\Release\priconfig.xml.intermediate
+C:\Watched\Watched\bld\Release\layout.resfiles
+C:\Watched\Watched\bld\Release\layout.resfiles.intermediate
+C:\Watched\Watched\bld\Release\resources.resfiles
+C:\Watched\Watched\bld\Release\resources.resfiles.intermediate
+C:\Watched\Watched\bld\Release\pri.resfiles
+C:\Watched\Watched\bld\Release\pri.resfiles.intermediate
+C:\Watched\Watched\bld\Release\qualifiers.txt
+C:\Watched\Watched\bld\Release\qualifiers.txt.intermediate
+C:\Watched\Watched\bld\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Watched\Watched\bld\Release\ProjectArchitectures.txt

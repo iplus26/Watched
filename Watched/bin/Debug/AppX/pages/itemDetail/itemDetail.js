@@ -203,14 +203,14 @@
                 var links = document.createElement("p");
                 var douban_link = document.createElement("a");
                 douban_link.href = "http://movie.douban.com/subject/" + movieItem.id + "/";
-                douban_link.innerHTML = "<span style='font-family:\"Segoe UI Symbol\"'>&#xe2A9;</span>豆瓣"
+                douban_link.innerHTML = "豆瓣"
                 links.appendChild(douban_link);
                 links.innerHTML += " / ";
                 var share = document.createElement("a");
                 share.addEventListener("click", function () {
                     Windows.ApplicationModel.DataTransfer.DataTransferManager.showShareUI();
                 });
-		        share.textContent="分享屏幕截图";
+                share.innerHTML = "<span style='font-family:\"Segoe UI Symbol\"'>&#xE114;</span>分享屏幕截图";
                 links.appendChild(share);
 
                 fragment1.appendChild(links);

@@ -1,4 +1,6 @@
-﻿body {font-family: DengXian;}
+﻿body, p, div {
+    font-family: DengXian;
+}
 
 .groupdetailpage section[role=main] {
     -ms-grid-row: 1;
@@ -55,6 +57,9 @@
         }
 
         .groupdetailpage .itemslist .win-groupheader .group-description {
+            font-family: DengXian;
+            text-align: justify;
+            text-justify: distribute;
             -ms-grid-row: 3;
             margin-bottom: 55px;
             overflow: hidden;
@@ -83,7 +88,7 @@
         }
 
             .groupdetailpage .itemslist .item .item-info .item-title {
-                margin-top: 4px;
+                margin-top: 0px;
                 max-height: 20px;
                 overflow: hidden;
             }

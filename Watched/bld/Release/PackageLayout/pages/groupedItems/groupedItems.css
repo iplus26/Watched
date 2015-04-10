@@ -1,4 +1,15 @@
-﻿body {font-family: DengXian;}
+﻿body, p, div {
+    font-family: DengXian;
+}
+
+.ask2rate {
+    font-size: 20px;
+    padding: 0px 2px 0px 2px;
+    background-color:  #1d1d1d;
+    color: white;
+    font-family: "Segoe UI Symbol";
+    vertical-align: text-top;
+}
 
 .searchBox {
     -ms-grid-column: 4;

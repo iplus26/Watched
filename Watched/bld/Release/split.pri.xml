@@ -2,6 +2,7 @@
 <PriInfo>
 	<ResourceMap name="19665iPlus26.36638B5798A12" version="1.0" primary="true">
 		<Qualifiers>
+			<Language>ZH-CN</Language>
 			<Scale>80, 100</Scale>
 			<TargetSize>48, 32, 256, 16</TargetSize>
 		</Qualifiers>
@@ -22,6 +23,11 @@
 				<NamedResource name="BadgeLogo.png" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/BadgeLogo.png">
 					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
 						<Value>images\BadgeLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="bjiff.jpg" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/bjiff.jpg">
+					<Candidate type="Path">
+						<Value>images\bjiff.jpg</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="celebrity-default-medium.gif" uri="ms-resource://19665iPlus26.36638B5798A12/Files/images/celebrity-default-medium.gif">
@@ -210,10 +216,26 @@
 			</ResourceMapSubtree>
 		</ResourceMapSubtree>
 		<ResourceMapSubtree name="resources">
-			<NamedResource name="brief" uri="ms-resource://19665iPlus26.36638B5798A12/resources/brief"/>
-			<NamedResource name="casts" uri="ms-resource://19665iPlus26.36638B5798A12/resources/casts"/>
-			<NamedResource name="image" uri="ms-resource://19665iPlus26.36638B5798A12/resources/image"/>
-			<NamedResource name="more" uri="ms-resource://19665iPlus26.36638B5798A12/resources/more"/>
+			<NamedResource name="brief" uri="ms-resource://19665iPlus26.36638B5798A12/resources/brief">
+				<Candidate qualifiers="Language-ZH-CN" isDefault="true" type="String">
+					<Value>简介</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="casts" uri="ms-resource://19665iPlus26.36638B5798A12/resources/casts">
+				<Candidate qualifiers="Language-ZH-CN" isDefault="true" type="String">
+					<Value>角儿</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="image" uri="ms-resource://19665iPlus26.36638B5798A12/resources/image">
+				<Candidate qualifiers="Language-ZH-CN" isDefault="true" type="String">
+					<Value>剧照</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="more" uri="ms-resource://19665iPlus26.36638B5798A12/resources/more">
+				<Candidate qualifiers="Language-ZH-CN" isDefault="true" type="String">
+					<Value>详情</Value>
+				</Candidate>
+			</NamedResource>
 		</ResourceMapSubtree>
 	</ResourceMap>
 </PriInfo>

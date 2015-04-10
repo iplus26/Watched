@@ -1,1 +1,1 @@
-C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\Watched.jsproj;neutral
+C:\Watched\Watched\Watched.jsproj;neutral

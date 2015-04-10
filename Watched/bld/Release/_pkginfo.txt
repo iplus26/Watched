@@ -1,1 +1,1 @@
-C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\AppPackages\Watched_1.1.0.4_Test\Watched_1.1.0.4_AnyCPU.appxbundle
+\\psf\Home\Desktop\Watched_1.1.0.6_Test\Watched_1.1.0.6_AnyCPU.appxbundle

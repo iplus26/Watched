@@ -5,9 +5,9 @@
     <autoResourcePackage qualifier="Scale" />
     <autoResourcePackage qualifier="DXFeatureLevel" />
   </packaging>
-  <index root="\" startIndexAt="C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Release\resources.pri">
+  <index root="\" startIndexAt="C:\Watched\Watched\bin\Release\resources.pri">
     <default>
-      <qualifier name="Language" value="en-US" />
+      <qualifier name="Language" value="zh-CN" />
       <qualifier name="Contrast" value="standard" />
       <qualifier name="Scale" value="100" />
       <qualifier name="HomeRegion" value="001" />

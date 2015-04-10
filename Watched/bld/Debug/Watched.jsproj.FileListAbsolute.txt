@@ -28,3 +28,33 @@ C:\Users\Ivan\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\r
 \\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\qualifiers.txt.intermediate
 \\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 \\psf\Home\Documents\Dev\Watched\Watched\bld\Debug\ProjectArchitectures.txt
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\ReverseMap\resources.pri
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\AppxManifest.xml
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bin\Debug\Watched.build.appxrecipe
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\priconfig.xml
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\priconfig.xml.intermediate
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\layout.resfiles
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\layout.resfiles.intermediate
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\resources.resfiles
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\resources.resfiles.intermediate
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\pri.resfiles
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\pri.resfiles.intermediate
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\qualifiers.txt
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\qualifiers.txt.intermediate
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+\\psf\Home\Documents\Visual Studio 2013\Projects\Watched\Watched\bld\Debug\ProjectArchitectures.txt
+C:\Watched\Watched\bin\Debug\ReverseMap\resources.pri
+C:\Watched\Watched\bin\Debug\AppxManifest.xml
+C:\Watched\Watched\bin\Debug\Watched.build.appxrecipe
+C:\Watched\Watched\bld\Debug\priconfig.xml
+C:\Watched\Watched\bld\Debug\priconfig.xml.intermediate
+C:\Watched\Watched\bld\Debug\layout.resfiles
+C:\Watched\Watched\bld\Debug\layout.resfiles.intermediate
+C:\Watched\Watched\bld\Debug\resources.resfiles
+C:\Watched\Watched\bld\Debug\resources.resfiles.intermediate
+C:\Watched\Watched\bld\Debug\pri.resfiles
+C:\Watched\Watched\bld\Debug\pri.resfiles.intermediate
+C:\Watched\Watched\bld\Debug\qualifiers.txt
+C:\Watched\Watched\bld\Debug\qualifiers.txt.intermediate
+C:\Watched\Watched\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Watched\Watched\bld\Debug\ProjectArchitectures.txt

@@ -1,3 +1,2 @@
-Language=ZH-CN
 Scale=140
 Scale=180

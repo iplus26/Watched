@@ -14,6 +14,18 @@
         // This function is called whenever a user navigates to this page.
         ready: function (element, options) {
             document.getElementById("searchBox").winControl.focusOnKeyboardInput = true;
+            document.getElementById("ask2rate").addEventListener("click", function () {
+                var uriToLaunch = "ms-windows-store:REVIEW?PFN=19665iPlus26.36638B5798A12_m8sg5ad4jwvaw";
+                var uri = new Windows.Foundation.Uri(uriToLaunch);
+                var options = new Windows.System.LauncherOptions();
+                options.treatAsUntrusted = true;
+                Windows.System.Launcher.launchUriAsync(uri, options).then(
+                    function (success) {
+                        if (success) {
+                        } else {
+                        }
+                    });
+            }); 
         },
 
         unload: function () {

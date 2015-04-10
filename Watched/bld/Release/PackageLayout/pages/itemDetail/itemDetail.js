@@ -82,9 +82,16 @@
                      movieItem.casts[i].picture = movieItem.casts[i].avatars.medium;
                  else
                      movieItem.casts[i].picture = "/images/celebrity-default-medium.gif";
+
+                 if (typeof movieItem.casts[i].alt === "undefined" || movieItem.casts[i].alt == null) {
+                     movieItem.casts[i].alt = "javascript: alert('hi')";//"http://www.imdb.com/find?ref_=nv_sr_fn&q=" + movieItem.casts[i].name + "&s=nm";
+                 } 
+
                  movieItem.casts[i].job = "出演";
                  items.push(movieItem.casts[i]);
              }
+
+
 
 
              WinJS.Namespace.define("itemDetail", {
@@ -196,14 +203,14 @@
                 var links = document.createElement("p");
                 var douban_link = document.createElement("a");
                 douban_link.href = "http://movie.douban.com/subject/" + movieItem.id + "/";
-                douban_link.innerHTML = "<span style='font-family:\"Segoe UI Symbol\"'>&#xe2A9;</span>豆瓣"
+                douban_link.innerHTML = "豆瓣"
                 links.appendChild(douban_link);
                 links.innerHTML += " / ";
                 var share = document.createElement("a");
                 share.addEventListener("click", function () {
                     Windows.ApplicationModel.DataTransfer.DataTransferManager.showShareUI();
                 });
-		        share.textContent="分享屏幕截图";
+                share.innerHTML = "<span style='font-family:\"Segoe UI Symbol\"'>&#xE114;</span>分享屏幕截图";
                 links.appendChild(share);
 
                 fragment1.appendChild(links);
@@ -374,8 +381,6 @@
                 
                 var imageRecommand = document.getElementById("image-recommand");
                 imageRecommand.src = posterUrl;
-              //  imageRecommand.onerror="document.getElementById('hubhero').style.backgroundImage = 'url(http://www.tbwaengage.com/wp-content/uploads/2013/08/Star-Wars-404-.jpg)';this.src = 'http://www.tbwaengage.com/wp-content/uploads/2013/08/Star-Wars-404-.jpg';"
-
 
                 // 感觉还是有一点bug，有时候会显示错误图片，然后加载出来全部图片之后就不管大小了，明天再说！晚安！
                 var check = function () {
