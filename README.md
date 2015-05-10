@@ -17,6 +17,11 @@
 * 首页的3x3海报换成了合集中随机抽取
 * 修改了一些说法
 
+2015.04.04
+
+* 一篇软文：[我在过去一个月在做什么 - 果冻](http://mp.weixin.qq.com/s?__biz=MzAwOTAxMTQ5Mw==&mid=204149515&idx=1&sn=b14f5a471dd5e5e9e291afdf67660b1c#rd)
+
+
 
 2015.04.03
 
@@ -42,6 +47,10 @@
 	* 只显示有限的内容梗概
 		* JavaScript 的 `substring()` 方法在 UTF-8 下竟然是自动识别中英文的？
 		
+2015.03.30
+
+* 创新杯宣传视频：[看过 - 腾讯视频](http://v.qq.com/boke/page/h/0/t/h0150iaol0t.html)
+		
 2015.03.28
 
 * itemDetail Page 
@@ -51,7 +60,7 @@
 2015.03.26
 
 * icon & launch image ([@小虚大魔王](https://github.com/thehackercat))
-* 上架 Windows Store
+* 上架 Windows Store: [看过 - Windows Store](http://apps.microsoft.com/windows/app/7eddcdbc-35a4-47ef-8ea7-fe7c37152d41)
 
 2015.03.24
 
