@@ -84,15 +84,12 @@
                      movieItem.casts[i].picture = "/images/celebrity-default-medium.gif";
 
                  if (typeof movieItem.casts[i].alt === "undefined" || movieItem.casts[i].alt == null) {
-                     movieItem.casts[i].alt = "javascript: alert('hi')";//"http://www.imdb.com/find?ref_=nv_sr_fn&q=" + movieItem.casts[i].name + "&s=nm";
+                     movieItem.casts[i].alt = "javascript: alert('没找到！')";//"http://www.imdb.com/find?ref_=nv_sr_fn&q=" + movieItem.casts[i].name + "&s=nm";
                  } 
 
                  movieItem.casts[i].job = "出演";
                  items.push(movieItem.casts[i]);
              }
-
-
-
 
              WinJS.Namespace.define("itemDetail", {
                  casts: new WinJS.Binding.List(items)
@@ -128,13 +125,16 @@
                 // movieItem = Data.getMovie(movieItem.id);
                 // 以下的这一块hack是因为豆瓣并没有向普通权限（就是我们）开放海报API
                 var xhr = new XMLHttpRequest();
-                var posterPage = "http://movie.douban.com/subject/" + movieItem.id + "/photos";//?type=W&start=0&sortby=vote&size=1920x1080&subtype=a";
+                var posterPage = "http://movie.douban.com/subject/" + movieItem.id + "/photos";
                 xhr.open("get", posterPage, false);
                 xhr.send(null);
                 var posterPageDOM = parseToDOM(xhr.responseText);
                 var img = posterPageDOM.querySelector("img[src^='http://img5.douban.com/view/photo/'], img[src^='http://img3.douban.com/view/photo/']");
                 if (img) {
-                   var posterUrl = img.src.replace(/thumb/, "raw");
+                    var posterUrl = img.src;//.replace(/thumb/, "raw");
+                        // 缩略图 http://img3.douban.com/view/photo/thumb/public/p1871083375.jpg
+                        // 原图   http://img3.douban.com/view/photo/raw/public/p1871083375.jpg
+                        // X 豆瓣把这个封掉了，暂时还没有想到解决方案..
                 } else {
                     var posterUrl = "/images/poster_error.jpg";
                 }

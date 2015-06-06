@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Watched\Watched\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-04-10T16:50:20.198</Modified>
+      <Modified>2015-04-10T16:50:20.000</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -30,19 +30,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\itemDetail\itemDetail.css">
       <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
-      <Modified>2015-04-09T14:56:10.756</Modified>
+      <Modified>2015-04-09T14:56:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\groupDetail\groupDetail.css">
       <PackagePath>pages\groupDetail\groupDetail.css</PackagePath>
-      <Modified>2015-04-09T15:25:22.577</Modified>
+      <Modified>2015-04-09T15:25:22.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\groupedItems\groupedItems.css">
       <PackagePath>pages\groupedItems\groupedItems.css</PackagePath>
-      <Modified>2015-04-09T17:13:28.179</Modified>
+      <Modified>2015-04-09T17:13:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\searchResult\searchResults.css">
       <PackagePath>pages\searchResult\searchResults.css</PackagePath>
-      <Modified>2015-04-09T15:06:25.415</Modified>
+      <Modified>2015-04-09T15:06:25.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\images\BadgeLogo.scale-100.png">
       <PackagePath>images\BadgeLogo.scale-100.png</PackagePath>
@@ -221,7 +221,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\js\data.js">
       <PackagePath>js\data.js</PackagePath>
-      <Modified>2015-04-10T16:42:17.449</Modified>
+      <Modified>2015-06-06T10:39:29.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\js\default.js">
       <PackagePath>js\default.js</PackagePath>
@@ -233,7 +233,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\itemDetail\itemDetail.js">
       <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
-      <Modified>2015-04-09T16:46:11.847</Modified>
+      <Modified>2015-06-06T10:52:42.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\groupDetail\groupDetail.js">
       <PackagePath>pages\groupDetail\groupDetail.js</PackagePath>
@@ -241,7 +241,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\groupedItems\groupedItems.js">
       <PackagePath>pages\groupedItems\groupedItems.js</PackagePath>
-      <Modified>2015-04-09T17:21:55.122</Modified>
+      <Modified>2015-04-09T17:21:55.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\searchResult\searchResults.js">
       <PackagePath>pages\searchResult\searchResults.js</PackagePath>
@@ -249,7 +249,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\itemDetail\itemDetail.html">
       <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
-      <Modified>2015-04-09T16:48:11.361</Modified>
+      <Modified>2015-04-09T16:48:11.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\groupDetail\groupDetail.html">
       <PackagePath>pages\groupDetail\groupDetail.html</PackagePath>
@@ -257,7 +257,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\pages\groupedItems\groupedItems.html">
       <PackagePath>pages\groupedItems\groupedItems.html</PackagePath>
-      <Modified>2015-04-09T17:23:36.358</Modified>
+      <Modified>2015-04-09T17:23:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\default.html">
       <PackagePath>default.html</PackagePath>
@@ -269,7 +269,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Watched\Watched\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-04-10T16:50:20.113</Modified>
+      <Modified>2015-06-06T09:30:55.159</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
